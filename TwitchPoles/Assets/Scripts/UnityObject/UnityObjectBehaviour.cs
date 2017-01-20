@@ -205,7 +205,7 @@ public class UnityObjectBehaviour : MonoBehaviour
 	}
 	public void OnValidate()
 	{
-		this.UnityObject.u.FireOnValidate();
+		//this.UnityObject.u.FireOnValidate();
 	}
 	public void OnWillRenderObject()
 	{

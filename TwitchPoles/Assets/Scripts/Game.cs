@@ -10,18 +10,26 @@ public class Game : MonoBehaviour
     public TextMesh Text;
     TwitchIRC _irc;
     MessageDebugger _messageDebugger;
+    Mob _mob;
 
     void Start ()
     {
         _irc = this.GetComponent<TwitchIRC>();
 
-        _messageDebugger = new MessageDebugger(Text);
+        _mob = new Mob();
+
+        _messageDebugger = new MessageDebugger();
 
         if (_irc.enabled)
             _irc.messageRecievedEvent.AddListener(MessageRecieved);
         else
             StartCoroutine(DoFakeUpdate());
 
+    }
+
+    void Update()
+    {
+        TinyCoro.StepAllCoros();
     }
 
     IEnumerator DoFakeUpdate()
@@ -40,8 +48,6 @@ public class Game : MonoBehaviour
             yield return new WaitForSeconds(UnityEngine.Random.Range(0.1f, 1f));
         }
     }
-
-
 
     private void MessageRecieved(string msg)
     {

@@ -6,14 +6,15 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class MessageDebugger
+    public class MessageDebugger : UnityObject
     {
         const int MaxMessages = 50;
         List<string> _msgs;
         TextMesh _text;
-        public MessageDebugger(TextMesh text)
+        public MessageDebugger()
+            : base(Assets.Spawn<GameObject>("DebugText"))
         {
-            _text = text;
+            _text = GameObject.GetComponent<TextMesh>();
             _msgs = new List<string>();
         }
 

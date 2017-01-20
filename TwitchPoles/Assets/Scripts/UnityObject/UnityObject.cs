@@ -42,7 +42,7 @@ public class UnityObject : IDisposable
     {
     }
         
-    new public bool IsDisposed
+    public bool IsDisposed
     {
         get
         {
