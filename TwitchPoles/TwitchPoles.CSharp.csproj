@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.4.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -73,6 +71,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Game.cs" />
     <Compile Include="Assets\Scripts\MessageDebugger.cs" />
+    <Compile Include="Assets\Scripts\TinyCoro\TinyCoro.cs" />
+    <Compile Include="Assets\Scripts\TinyCoro\TinyCoroStatic.cs" />
+    <Compile Include="Assets\Scripts\TinyCoro\TinyThread.cs" />
+    <Compile Include="Assets\Scripts\UnityObject\MonoBehaviourMessages.cs" />
+    <Compile Include="Assets\Scripts\UnityObject\UnityObject.cs" />
+    <Compile Include="Assets\Scripts\UnityObject\UnityObjectBehaviour.cs" />
+    <Compile Include="Assets\Scripts\UnityObject\UnityUtility.cs" />
     <Compile Include="Assets\TwitchIRC-Unity-master\TwitchIRC-Unity-master\TwitchChatExample.cs" />
     <Compile Include="Assets\TwitchIRC-Unity-master\TwitchIRC-Unity-master\TwitchIRC.cs" />
   </ItemGroup>

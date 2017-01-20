@@ -1704,3 +1704,332 @@ TextScriptImporter:
 :crimson57o!crimson57o@crimson57o.tmi.twitch.tv PRIVMSG #lpl1 :Lol
 :fokeriser!fokeriser@fokeriser.tmi.twitch.tv PRIVMSG #lpl1 :OPEN MID BigBrother
 :hanklee157!hanklee157@hanklee157.tmi.twitch.tv PRIVMSG #lpl1 :87
+:f1zzonmyj4yce!f1zzonmyj4yce@f1zzonmyj4yce.tmi.twitch.tv PRIVMSG #lpl1 :NB3 taught Swift the way of the NA Khazix Kappa
+:gyunol!gyunol@gyunol.tmi.twitch.tv PRIVMSG #lpl1 :its pleasure to see kha back in the meta
+:dregunv!dregunv@dregunv.tmi.twitch.tv PRIVMSG #lpl1 :CALL 911 HES CRYING BibleThump
+:0000000_harambe!0000000_harambe@0000000_harambe.tmi.twitch.tv PRIVMSG #lpl1 :WE tilted from pick ban phase LUL
+:genelu6!genelu6@genelu6.tmi.twitch.tv PRIVMSG #lpl1 :957 was another V
+:fmg93!fmg93@fmg93.tmi.twitch.tv PRIVMSG #lpl1 :dardoch LUL
+:youdontsay_youwhy!youdontsay_youwhy@youdontsay_youwhy.tmi.twitch.tv PRIVMSG #lpl1 :NA EleGiggle
+:s0890235!s0890235@s0890235.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:carrett50cal!carrett50cal@carrett50cal.tmi.twitch.tv PRIVMSG #lpl1 :NB3 Is a famous sand TriHard
+:chinachoochoo!chinachoochoo@chinachoochoo.tmi.twitch.tv PRIVMSG #lpl1 :Dardoch LUL
+:ultimec1a!ultimec1a@ultimec1a.tmi.twitch.tv PRIVMSG #lpl1 :EleGiggle
+:guumpa!guumpa@guumpa.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:daren353!daren353@daren353.tmi.twitch.tv PRIVMSG #lpl1 :idiot
+:fokeriser!fokeriser@fokeriser.tmi.twitch.tv PRIVMSG #lpl1 :1vs4 naut LUL
+:euwryze!euwryze@euwryze.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:gbay99_senpai_!gbay99_senpai_@gbay99_senpai_.tmi.twitch.tv PRIVMSG #lpl1 :LEP
+:suuudare!suuudare@suuudare.tmi.twitch.tv PRIVMSG #lpl1 :na tp
+:tell_me_your_wish!tell_me_your_wish@tell_me_your_wish.tmi.twitch.tv PRIVMSG #lpl1 :Lpl is so exci- ResidentSleeper
+:diuturnus!diuturnus@diuturnus.tmi.twitch.tv PRIVMSG #lpl1 :???????????
+:lzp77221!lzp77221@lzp77221.tmi.twitch.tv PRIVMSG #lpl1 :lol
+:oceanfluff!oceanfluff@oceanfluff.tmi.twitch.tv PRIVMSG #lpl1 :Squishy Maoikai 4Head
+:nanthefunk!nanthefunk@nanthefunk.tmi.twitch.tv PRIVMSG #lpl1 :Mao LUL
+:aoinoko!aoinoko@aoinoko.tmi.twitch.tv PRIVMSG #lpl1 :nice flank LUL
+:s0890235!s0890235@s0890235.tmi.twitch.tv PRIVMSG #lpl1 :LPL LUL
+:gilbertyao!gilbertyao@gilbertyao.tmi.twitch.tv PRIVMSG #lpl1 :na tp
+:yang60372!yang60372@yang60372.tmi.twitch.tv PRIVMSG #lpl1 :957 LUL
+:fmg93!fmg93@fmg93.tmi.twitch.tv PRIVMSG #lpl1 :lol
+:siggyboy!siggyboy@siggyboy.tmi.twitch.tv PRIVMSG #lpl1 :GO NIGHTBLUE TEAM !
+:f1zzonmyj4yce!f1zzonmyj4yce@f1zzonmyj4yce.tmi.twitch.tv PRIVMSG #lpl1 :NB3 taught Swift the way of the NA Khazix Kappa
+:gyunol!gyunol@gyunol.tmi.twitch.tv PRIVMSG #lpl1 :its pleasure to see kha back in the meta
+:dregunv!dregunv@dregunv.tmi.twitch.tv PRIVMSG #lpl1 :CALL 911 HES CRYING BibleThump
+:0000000_harambe!0000000_harambe@0000000_harambe.tmi.twitch.tv PRIVMSG #lpl1 :WE tilted from pick ban phase LUL
+:genelu6!genelu6@genelu6.tmi.twitch.tv PRIVMSG #lpl1 :957 was another V
+:fmg93!fmg93@fmg93.tmi.twitch.tv PRIVMSG #lpl1 :dardoch LUL
+:youdontsay_youwhy!youdontsay_youwhy@youdontsay_youwhy.tmi.twitch.tv PRIVMSG #lpl1 :NA EleGiggle
+:s0890235!s0890235@s0890235.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:carrett50cal!carrett50cal@carrett50cal.tmi.twitch.tv PRIVMSG #lpl1 :NB3 Is a famous sand TriHard
+:chinachoochoo!chinachoochoo@chinachoochoo.tmi.twitch.tv PRIVMSG #lpl1 :Dardoch LUL
+:ultimec1a!ultimec1a@ultimec1a.tmi.twitch.tv PRIVMSG #lpl1 :EleGiggle
+:guumpa!guumpa@guumpa.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:daren353!daren353@daren353.tmi.twitch.tv PRIVMSG #lpl1 :idiot
+:fokeriser!fokeriser@fokeriser.tmi.twitch.tv PRIVMSG #lpl1 :1vs4 naut LUL
+:euwryze!euwryze@euwryze.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:gbay99_senpai_!gbay99_senpai_@gbay99_senpai_.tmi.twitch.tv PRIVMSG #lpl1 :LEP
+:suuudare!suuudare@suuudare.tmi.twitch.tv PRIVMSG #lpl1 :na tp
+:tell_me_your_wish!tell_me_your_wish@tell_me_your_wish.tmi.twitch.tv PRIVMSG #lpl1 :Lpl is so exci- ResidentSleeper
+:diuturnus!diuturnus@diuturnus.tmi.twitch.tv PRIVMSG #lpl1 :???????????
+:lzp77221!lzp77221@lzp77221.tmi.twitch.tv PRIVMSG #lpl1 :lol
+:oceanfluff!oceanfluff@oceanfluff.tmi.twitch.tv PRIVMSG #lpl1 :Squishy Maoikai 4Head
+:nanthefunk!nanthefunk@nanthefunk.tmi.twitch.tv PRIVMSG #lpl1 :Mao LUL
+:aoinoko!aoinoko@aoinoko.tmi.twitch.tv PRIVMSG #lpl1 :nice flank LUL
+:s0890235!s0890235@s0890235.tmi.twitch.tv PRIVMSG #lpl1 :LPL LUL
+:gilbertyao!gilbertyao@gilbertyao.tmi.twitch.tv PRIVMSG #lpl1 :na tp
+:yang60372!yang60372@yang60372.tmi.twitch.tv PRIVMSG #lpl1 :957 LUL
+:fmg93!fmg93@fmg93.tmi.twitch.tv PRIVMSG #lpl1 :lol
+:siggyboy!siggyboy@siggyboy.tmi.twitch.tv PRIVMSG #lpl1 :GO NIGHTBLUE TEAM !
+:chinachoochoo!chinachoochoo@chinachoochoo.tmi.twitch.tv PRIVMSG #lpl1 :TEAM??
+:f1zzonmyj4yce!f1zzonmyj4yce@f1zzonmyj4yce.tmi.twitch.tv PRIVMSG #lpl1 :haHAA DOOT DIDDLY CUCKERINO DONGER haHAA Im a cringe 12yo LUL
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :Is Swift Korean or Chinese????
+:duchyyy!duchyyy@duchyyy.tmi.twitch.tv PRIVMSG #lpl1 :0 dmg LUL
+:oceanfluff!oceanfluff@oceanfluff.tmi.twitch.tv PRIVMSG #lpl1 :0/3 Mao
+:euwryze!euwryze@euwryze.tmi.twitch.tv PRIVMSG #lpl1 :bronze subwars qtpHONK
+:fokeriser!fokeriser@fokeriser.tmi.twitch.tv PRIVMSG #lpl1 :nice magic resist maokai haHAA
+:klfdnmzx9!klfdnmzx9@klfdnmzx9.tmi.twitch.tv PRIVMSG #lpl1 :PogChamp
+:wsx123wsx!wsx123wsx@wsx123wsx.tmi.twitch.tv PRIVMSG #lpl1 :1v4 MAO VS 1v4 NAU
+:karolis212!karolis212@karolis212.tmi.twitch.tv PRIVMSG #lpl1 :PogChamp
+:xnaesx!xnaesx@xnaesx.tmi.twitch.tv PRIVMSG #lpl1 :PogChamp
+:soulawaken!soulawaken@soulawaken.tmi.twitch.tv PRIVMSG #lpl1 :Cool
+:im_only_sleeping!im_only_sleeping@im_only_sleeping.tmi.twitch.tv PRIVMSG #lpl1 :PogChamp FailFish
+:nrvgaming!nrvgaming@nrvgaming.tmi.twitch.tv PRIVMSG #lpl1 :957 is the number of death he manage to get at end of split Kappa
+:twitchilluminati!twitchilluminati@twitchilluminati.tmi.twitch.tv PRIVMSG #lpl1 :what is this casting 4Head
+:emrekay4!emrekay4@emrekay4.tmi.twitch.tv PRIVMSG #lpl1 :Cool move..
+:crimson57o!crimson57o@crimson57o.tmi.twitch.tv PRIVMSG #lpl1 :Lol
+:fokeriser!fokeriser@fokeriser.tmi.twitch.tv PRIVMSG #lpl1 :OPEN MID BigBrother
+:hanklee157!hanklee157@hanklee157.tmi.twitch.tv PRIVMSG #lpl1 :87
+:dani1ftw!dani1ftw@dani1ftw.tmi.twitch.tv PRIVMSG #lpl1 :gj nightblue
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :Is Swift Korea?
+:deyusha!deyusha@deyusha.tmi.twitch.tv PRIVMSG #lpl1 :newbie?
+:killingtime23!killingtime23@killingtime23.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:nzliamlol!nzliamlol@nzliamlol.tmi.twitch.tv PRIVMSG #lpl1 :S3 Cool PogChamp
+:emrekay4!emrekay4@emrekay4.tmi.twitch.tv PRIVMSG #lpl1 :4Head
+:zacc0420!zacc0420@zacc0420.tmi.twitch.tv PRIVMSG #lpl1 :虐蔡
+:aoinoko!aoinoko@aoinoko.tmi.twitch.tv PRIVMSG #lpl1 :this team has very low early damage FailFish
+:edcesz!edcesz@edcesz.tmi.twitch.tv PRIVMSG #lpl1 :teamnerde
+:brian2shaw!brian2shaw@brian2shaw.tmi.twitch.tv PRIVMSG #lpl1 :weird ***
+:rosdbz!rosdbz@rosdbz.tmi.twitch.tv PRIVMSG #lpl1 :gg
+:yoooyaaac!yoooyaaac@yoooyaaac.tmi.twitch.tv PRIVMSG #lpl1 :RAP GOD
+:yunglord123!yunglord123@yunglord123.tmi.twitch.tv PRIVMSG #lpl1 :gg
+:twitchilluminati!twitchilluminati@twitchilluminati.tmi.twitch.tv PRIVMSG #lpl1 :these casters haHAA
+:chinachoochoo!chinachoochoo@chinachoochoo.tmi.twitch.tv PRIVMSG #lpl1 :Penis carrying PogChamp
+:moonfish817!moonfish817@moonfish817.tmi.twitch.tv PRIVMSG #lpl1 :WE pls winm
+:oceanfluff!oceanfluff@oceanfluff.tmi.twitch.tv PRIVMSG #lpl1 :REPORT MAO Kappa
+:carrett50cal!carrett50cal@carrett50cal.tmi.twitch.tv PRIVMSG #lpl1 :@NrvGaming, ebic joke mee mee xd haHAA
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :Is Swift Korean?
+:joe850318!joe850318@joe850318.tmi.twitch.tv PRIVMSG #lpl1 :top mokai 030 godtoneOUO godtoneOUO godtoneOUO
+:ledgy28!ledgy28@ledgy28.tmi.twitch.tv PRIVMSG #lpl1 :LPL PRODUCTION LUL
+:lxe322!lxe322@lxe322.tmi.twitch.tv PRIVMSG #lpl1 :damn FeelsBadMan
+:senxinxu!senxinxu@senxinxu.tmi.twitch.tv PRIVMSG #lpl1 :S3 COOL LUL
+:soulawaken!soulawaken@soulawaken.tmi.twitch.tv PRIVMSG #lpl1 :Balanced casters PogChamp
+:ochibana_ame!ochibana_ame@ochibana_ame.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:f1zzonmyj4yce!f1zzonmyj4yce@f1zzonmyj4yce.tmi.twitch.tv PRIVMSG #lpl1 :Bye Raz HeyGuys
+:inochiromance!inochiromance@inochiromance.tmi.twitch.tv PRIVMSG #lpl1 :OPEN MID PogChamp
+:jusbaaja!jusbaaja@jusbaaja.tmi.twitch.tv PRIVMSG #lpl1 :RUN IT DOWN MIN SwiftRage
+:akleleep!akleleep@akleleep.tmi.twitch.tv PRIVMSG #lpl1 :KUK caster
+:lzp77221!lzp77221@lzp77221.tmi.twitch.tv PRIVMSG #lpl1 :cool bjergGasm
+:crimson57o!crimson57o@crimson57o.tmi.twitch.tv PRIVMSG #lpl1 :ff at 20
+:yunglord123!yunglord123@yunglord123.tmi.twitch.tv PRIVMSG #lpl1 :Tilted.
+:gi4nnelli!gi4nnelli@gi4nnelli.tmi.twitch.tv PRIVMSG #lpl1 :@NrvGaming, Or the number of times he's feeding in lane LUL
+:mexican5niper!mexican5niper@mexican5niper.tmi.twitch.tv PRIVMSG #lpl1 :casters FailFish
+:heartlesstanker!heartlesstanker@heartlesstanker.tmi.twitch.tv PRIVMSG #lpl1 :REPORT FOR TOXICITY Kappa
+:yang60372!yang60372@yang60372.tmi.twitch.tv PRIVMSG #lpl1 :NA Q
+:moonfish817!moonfish817@moonfish817.tmi.twitch.tv PRIVMSG #lpl1 :Good arrow though
+:onetrickmantis!onetrickmantis@onetrickmantis.tmi.twitch.tv PRIVMSG #lpl1 :na q
+:anti7ec!anti7ec@anti7ec.tmi.twitch.tv PRIVMSG #lpl1 :bronze chat WutFace
+:yoooyaaac!yoooyaaac@yoooyaaac.tmi.twitch.tv PRIVMSG #lpl1 :penis lul
+:senxinxu!senxinxu@senxinxu.tmi.twitch.tv PRIVMSG #lpl1 :NA KARMA LUL
+:kwan1997114!kwan1997114@kwan1997114.tmi.twitch.tv PRIVMSG #lpl1 :karma WutFace WutFace
+:euwryze!euwryze@euwryze.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:zzaru!zzaru@zzaru.tmi.twitch.tv PRIVMSG #lpl1 :lul oop
+:teamnodignity!teamnodignity@teamnodignity.tmi.twitch.tv PRIVMSG #lpl1 :PINUS Q LUL
+:callmejustinn!callmejustinn@callmejustinn.tmi.twitch.tv PRIVMSG #lpl1 :STROKE ME I WANNA CUM Kreygasm
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :Wildturtle will carry TSM to win worlds LUL
+:fa_v!fa_v@fa_v.tmi.twitch.tv PRIVMSG #lpl1 :braum was the answer
+:docreverb!docreverb@docreverb.tmi.twitch.tv PRIVMSG #lpl1 :LJL LUL
+:clankod!clankod@clankod.tmi.twitch.tv PRIVMSG #lpl1 :jokes aside LPL looks trash this year haHAA
+:edlesross!edlesross@edlesross.tmi.twitch.tv PRIVMSG #lpl1 :what happened to imp? why is he still on lgd?
+:xsyd!xsyd@xsyd.tmi.twitch.tv PRIVMSG #lpl1 :@JustBasti, Wake me up when LPL starts ResidentSleeper
+:na_0_10_neverforget!na_0_10_neverforget@na_0_10_neverforget.tmi.twitch.tv PRIVMSG #lpl1 :@tytdo2 where?
+:b_voesch!b_voesch@b_voesch.tmi.twitch.tv PRIVMSG #lpl1 :ResidentSleeper
+:cptspriit!cptspriit@cptspriit.tmi.twitch.tv PRIVMSG #lpl1 :TriHard
+:qsuen!qsuen@qsuen.tmi.twitch.tv PRIVMSG #lpl1 :Pinus haHAA
+:kch2312!kch2312@kch2312.tmi.twitch.tv PRIVMSG #lpl1 :CS sucks
+:youkai111!youkai111@youkai111.tmi.twitch.tv PRIVMSG #lpl1 :imp got beat up and they broke his glasses
+:cptspriit!cptspriit@cptspriit.tmi.twitch.tv PRIVMSG #lpl1 :TriHard TriHard TriHard TriHard TriHard TriHard TriHard TriHard TriHard TriHard TriHard TriHard TriHard TriHard TriHard
+:123zeron321!123zeron321@123zeron321.tmi.twitch.tv PRIVMSG #lpl1 :@clankod, still better than NA LUL
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :Imp died defending China's honor in a restaurant
+:tytdo2!tytdo2@tytdo2.tmi.twitch.tv PRIVMSG #lpl1 :LJl 2017 slpit
+:zer088!zer088@zer088.tmi.twitch.tv PRIVMSG #lpl1 :Ezreal still on muramana on 23m LUL
+:lxe322!lxe322@lxe322.tmi.twitch.tv PRIVMSG #lpl1 :@youkai111, ADC IN REAL LIFE EleGiggle
+:tytdo2!tytdo2@tytdo2.tmi.twitch.tv PRIVMSG #lpl1 :its funny XD plays
+:youkai111!youkai111@youkai111.tmi.twitch.tv PRIVMSG #lpl1 :oh yeah i forgot he sucummed to the injuries rip
+:fearthegarbanzo!fearthegarbanzo@fearthegarbanzo.tmi.twitch.tv PRIVMSG #lpl1 :does LJL have any english stream
+:123zeron321!123zeron321@123zeron321.tmi.twitch.tv PRIVMSG #lpl1 :Wtf are those seeds
+:guibnk!guibnk@guibnk.tmi.twitch.tv PRIVMSG #lpl1 :OH ZYRA PLANTS HOLY
+:edlesross!edlesross@edlesross.tmi.twitch.tv PRIVMSG #lpl1 :I dont mean the restaurant fight, why is he still on this trash team lgd?
+:tytdo2!tytdo2@tytdo2.tmi.twitch.tv PRIVMSG #lpl1 :no
+:docreverb!docreverb@docreverb.tmi.twitch.tv PRIVMSG #lpl1 :@youkai111, gg no peel
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :Yeah R.I.P. Imp we will remember you
+:gezser!gezser@gezser.tmi.twitch.tv PRIVMSG #lpl1 :CLEAN
+:souldrive!souldrive@souldrive.tmi.twitch.tv PRIVMSG #lpl1 :PogChamp
+:helixphantom!helixphantom@helixphantom.tmi.twitch.tv PRIVMSG #lpl1 :PogChamp
+:guibnk!guibnk@guibnk.tmi.twitch.tv PRIVMSG #lpl1 :SUMIU
+:mod_rain!mod_rain@mod_rain.tmi.twitch.tv PRIVMSG #lpl1 :tfsMur tfsStur tfsStur tfsStur tfsStur tfsStur tfsStake
+:dreamcarrys!dreamcarrys@dreamcarrys.tmi.twitch.tv PRIVMSG #lpl1 :4hEAD
+:howareyou80075!howareyou80075@howareyou80075.tmi.twitch.tv PRIVMSG #lpl1 :PogChamp PogChamp PogChamp PogChamp PogChamp PogChamp PogChamp
+:hardyakka!hardyakka@hardyakka.tmi.twitch.tv PRIVMSG #lpl1 :DESTROYED
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :P DIDDY?
+:b_voesch!b_voesch@b_voesch.tmi.twitch.tv PRIVMSG #lpl1 :D E L E T E D
+:eat_a__snickers!eat_a__snickers@eat_a__snickers.tmi.twitch.tv PRIVMSG #lpl1 :this series still going on ResidentSleeper
+:euwryze!euwryze@euwryze.tmi.twitch.tv PRIVMSG #lpl1 :PogChamp
+:guibnk!guibnk@guibnk.tmi.twitch.tv PRIVMSG #lpl1 :KAPPA
+:aron0182!aron0182@aron0182.tmi.twitch.tv PRIVMSG #lpl1 :tyler1Champ
+:0000000_harambe!0000000_harambe@0000000_harambe.tmi.twitch.tv PRIVMSG #lpl1 :FeelsBadMan 🔫 pulls the trigger
+:2becontinued!2becontinued@2becontinued.tmi.twitch.tv PRIVMSG #lpl1 :How come there's only 1 Korean playing? Where's Doinb/Loken/Khan?
+:puzzlerz!puzzlerz@puzzlerz.tmi.twitch.tv PRIVMSG #lpl1 :Pinus?
+:thesa23!thesa23@thesa23.tmi.twitch.tv PRIVMSG #lpl1 :THEY THEY THEY
+:123zeron321!123zeron321@123zeron321.tmi.twitch.tv PRIVMSG #lpl1 :Towers in 2017 LUL
+:hummusgoat!hummusgoat@hummusgoat.tmi.twitch.tv PRIVMSG #lpl1 :PogChamp
+:guibnk!guibnk@guibnk.tmi.twitch.tv PRIVMSG #lpl1 :Kappa Kappa Kappa Kappa Kappa Kappa
+:tacobells10125!tacobells10125@tacobells10125.tmi.twitch.tv PRIVMSG #lpl1 :casters ResidentSleeper
+:rfarleydude97!rfarleydude97@rfarleydude97.tmi.twitch.tv PRIVMSG #lpl1 :ResidentSleeper ResidentSleeper ResidentSleeper
+:komica5566!komica5566@komica5566.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:zephoshd!zephoshd@zephoshd.tmi.twitch.tv PRIVMSG #lpl1 :Wait what happened to Imp?
+:kch2312!kch2312@kch2312.tmi.twitch.tv PRIVMSG #lpl1 :SwiftRage
+:tycmmc!tycmmc@tycmmc.tmi.twitch.tv PRIVMSG #lpl1 :CN IMPORTS COME TO NA EleGiggle EleGiggle
+:euwryze!euwryze@euwryze.tmi.twitch.tv PRIVMSG #lpl1 :maokai FeelsAmazingMan
+:mikeypao526!mikeypao526@mikeypao526.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:na_0_10_neverforget!na_0_10_neverforget@na_0_10_neverforget.tmi.twitch.tv PRIVMSG #lpl1 :Perkz Syndra
+:docreverb!docreverb@docreverb.tmi.twitch.tv PRIVMSG #lpl1 :Laser towers wouldve killed mao in 3 secs FeelsBadMan
+:guibnk!guibnk@guibnk.tmi.twitch.tv PRIVMSG #lpl1 :957 PLAYS NICE
+:ristt!ristt@ristt.tmi.twitch.tv PRIVMSG #lpl1 :WWE.
+:bladelordcal!bladelordcal@bladelordcal.tmi.twitch.tv PRIVMSG #lpl1 :pinus LUL
+:a_mula_do_time_do_gratis!a_mula_do_time_do_gratis@a_mula_do_time_do_gratis.tmi.twitch.tv PRIVMSG #lpl1 :MAOKAI LUL
+:cosa_nostraaa!cosa_nostraaa@cosa_nostraaa.tmi.twitch.tv PRIVMSG #lpl1 :Lee?
+:101shiki!101shiki@101shiki.tmi.twitch.tv PRIVMSG #lpl1 :Malzapinus
+:defunctional!defunctional@defunctional.tmi.twitch.tv PRIVMSG #lpl1 :SKT vs OMG AT 2013 WC ALL OVER AGAIN PogChamp
+:matost!matost@matost.tmi.twitch.tv PRIVMSG #lpl1 :took whole mid in 1 push LUL
+:euwryze!euwryze@euwryze.tmi.twitch.tv PRIVMSG #lpl1 :fun and interactive tanks FeelsGoodMan
+:egmnyksl!egmnyksl@egmnyksl.tmi.twitch.tv PRIVMSG #lpl1 :winning eleven always winning
+:unchainedwaif44!unchainedwaif44@unchainedwaif44.tmi.twitch.tv PRIVMSG #lpl1 :ResidentSleeper ResidentSleeper ResidentSleeper
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :Circus Parade FeelsGoodMan
+:jackp0tta!jackp0tta@jackp0tta.tmi.twitch.tv PRIVMSG #lpl1 :WE Kreygasm
+:123zeron321!123zeron321@123zeron321.tmi.twitch.tv PRIVMSG #lpl1 :Meowkai CoolCat
+:guibnk!guibnk@guibnk.tmi.twitch.tv PRIVMSG #lpl1 :@a_mula_do_time_do_gratis UASHUSHAUHSAUHSUHA que nick é esse mano
+:f22raptor1986!f22raptor1986@f22raptor1986.tmi.twitch.tv PRIVMSG #lpl1 :Report lee for trolling
+:mikeypao526!mikeypao526@mikeypao526.tmi.twitch.tv PRIVMSG #lpl1 :Gg
+:scarraface!scarraface@scarraface.tmi.twitch.tv PRIVMSG #lpl1 :CN TALENT > NA TALENT MingLee
+:docreverb!docreverb@docreverb.tmi.twitch.tv PRIVMSG #lpl1 :??????????/
+:tycmmc!tycmmc@tycmmc.tmi.twitch.tv PRIVMSG #lpl1 :?
+:lorenzomarcano!lorenzomarcano@lorenzomarcano.tmi.twitch.tv PRIVMSG #lpl1 :does c9 play today?
+:zacc0420!zacc0420@zacc0420.tmi.twitch.tv PRIVMSG #lpl1 :?
+:guibnk!guibnk@guibnk.tmi.twitch.tv PRIVMSG #lpl1 :LEP
+:autumnwindlee!autumnwindlee@autumnwindlee.tmi.twitch.tv PRIVMSG #lpl1 :?
+:lxe322!lxe322@lxe322.tmi.twitch.tv PRIVMSG #lpl1 :LEP EleGiggle
+:kbzz5050!kbzz5050@kbzz5050.tmi.twitch.tv PRIVMSG #lpl1 :?
+:imabait97!imabait97@imabait97.tmi.twitch.tv PRIVMSG #lpl1 :NA TP
+:youkai111!youkai111@youkai111.tmi.twitch.tv PRIVMSG #lpl1 :?
+:euwryze!euwryze@euwryze.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:fishroesoup!fishroesoup@fishroesoup.tmi.twitch.tv PRIVMSG #lpl1 :GOKU ? Jebaited
+:guumpa!guumpa@guumpa.tmi.twitch.tv PRIVMSG #lpl1 :LEP LUL
+:mod_rain!mod_rain@mod_rain.tmi.twitch.tv PRIVMSG #lpl1 :tfsMur tfsStur tfsStur tfsStur tfsStur tfsStur tfsStake
+:justbasti!justbasti@justbasti.tmi.twitch.tv PRIVMSG #lpl1 :haHAA
+:aron0182!aron0182@aron0182.tmi.twitch.tv PRIVMSG #lpl1 :tyler1HA
+:zer088!zer088@zer088.tmi.twitch.tv PRIVMSG #lpl1 :manamune finally
+:cosa_nostraaa!cosa_nostraaa@cosa_nostraaa.tmi.twitch.tv PRIVMSG #lpl1 :LOL
+:canihabepizzapls!canihabepizzapls@canihabepizzapls.tmi.twitch.tv PRIVMSG #lpl1 :CRINGE
+:dmacka!dmacka@dmacka.tmi.twitch.tv PRIVMSG #lpl1 :tp BM
+:mod_rain!mod_rain@mod_rain.tmi.twitch.tv PRIVMSG #lpl1 :tfsNyaa > Goku and Vegeta combined
+:guibnk!guibnk@guibnk.tmi.twitch.tv PRIVMSG #lpl1 :NA TP
+:varkannant!varkannant@varkannant.tmi.twitch.tv PRIVMSG #lpl1 :Yes, c9 play today
+:defunctional!defunctional@defunctional.tmi.twitch.tv PRIVMSG #lpl1 :TODAY TSM vs C9
+:kevinant95!kevinant95@kevinant95.tmi.twitch.tv PRIVMSG #lpl1 :"COKU" DansGame
+:f22raptor1986!f22raptor1986@f22raptor1986.tmi.twitch.tv PRIVMSG #lpl1 :Clownfiesta
+:lxe322!lxe322@lxe322.tmi.twitch.tv PRIVMSG #lpl1 :what??
+:vvv_bullet!vvv_bullet@vvv_bullet.tmi.twitch.tv PRIVMSG #lpl1 :I hate him
+:xsyd!xsyd@xsyd.tmi.twitch.tv PRIVMSG #lpl1 :22
+:feamirim!feamirim@feamirim.tmi.twitch.tv PRIVMSG #lpl1 :These commentators suck
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :They take 7 games to charge up to full strength?
+:tycmmc!tycmmc@tycmmc.tmi.twitch.tv PRIVMSG #lpl1 :FREESM ONLY 1 NA PLAYER EleGiggle EleGiggle
+:lorenzomarcano!lorenzomarcano@lorenzomarcano.tmi.twitch.tv PRIVMSG #lpl1 :someone can say me if does c9 play today?
+:leonora152000!leonora152000@leonora152000.tmi.twitch.tv PRIVMSG #lpl1 :11h to NA LCS PogChamp
+:cor_bach!cor_bach@cor_bach.tmi.twitch.tv PRIVMSG #lpl1 :Dat TP DansGame
+:edlesross!edlesross@edlesross.tmi.twitch.tv PRIVMSG #lpl1 :deft has muramana at 18 min
+:mrsolodolo26!mrsolodolo26@mrsolodolo26.tmi.twitch.tv PRIVMSG #lpl1 :NAi jokes in 2017 LUL
+:varkannant!varkannant@varkannant.tmi.twitch.tv PRIVMSG #lpl1 :Yeah, c9 play today vs tsm
+:lxe322!lxe322@lxe322.tmi.twitch.tv PRIVMSG #lpl1 :@vVv_BuLLeT, Who? Dom or Raz?
+:pillowesque!pillowesque@pillowesque.tmi.twitch.tv PRIVMSG #lpl1 :me
+:redhairyboy!redhairyboy@redhairyboy.tmi.twitch.tv PRIVMSG #lpl1 :@디펑셔널 FreeSM vs C9 FTFY
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :Yeah LPL is very low on talent.. it's like the island of misfit toys...but for casters, Pulse will join them too...
+:lorenzomarcano!lorenzomarcano@lorenzomarcano.tmi.twitch.tv PRIVMSG #lpl1 :oh ty mrsolodolo26 xd
+:zer088!zer088@zer088.tmi.twitch.tv PRIVMSG #lpl1 :TSM vs C9 in just 11h
+:edlesross!edlesross@edlesross.tmi.twitch.tv PRIVMSG #lpl1 :lmao
+:0000000_harambe!0000000_harambe@0000000_harambe.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :Buying rune skimmy 25k
+:huntergonfreecss!huntergonfreecss@huntergonfreecss.tmi.twitch.tv PRIVMSG #lpl1 :D 4Head O 4Head I 4Head D 4Head E 4Head I 4Head R 4Head A 4Head
+:b_voesch!b_voesch@b_voesch.tmi.twitch.tv PRIVMSG #lpl1 :Lee 4Head
+:00higgo!00higgo@00higgo.tmi.twitch.tv PRIVMSG #lpl1 :Lee is doing legit nothing
+:onwkase!onwkase@onwkase.tmi.twitch.tv PRIVMSG #lpl1 :WHY JUKES
+:guibnk!guibnk@guibnk.tmi.twitch.tv PRIVMSG #lpl1 :WHY JUKES
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :That tower memes absolutely nothing LUL
+:guibnk!guibnk@guibnk.tmi.twitch.tv PRIVMSG #lpl1 :TRUNDLE PUSH
+:greatlebowski!greatlebowski@greatlebowski.tmi.twitch.tv PRIVMSG #lpl1 :LMFAO
+:ryzelux!ryzelux@ryzelux.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:alppuuuhd!alppuuuhd@alppuuuhd.tmi.twitch.tv PRIVMSG #lpl1 :doublelift >>>> brtt
+:blobbymagnet!blobbymagnet@blobbymagnet.tmi.twitch.tv PRIVMSG #lpl1 :lul
+:klfdnmzx9!klfdnmzx9@klfdnmzx9.tmi.twitch.tv PRIVMSG #lpl1 :LUL bait
+:sogood234!sogood234@sogood234.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:capsonly!capsonly@capsonly.tmi.twitch.tv PRIVMSG #lpl1 :??????
+:guibnk!guibnk@guibnk.tmi.twitch.tv PRIVMSG #lpl1 :DELETED
+:souldrive!souldrive@souldrive.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:youkai111!youkai111@youkai111.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:fishroesoup!fishroesoup@fishroesoup.tmi.twitch.tv PRIVMSG #lpl1 :LUL 4Head
+:b_voesch!b_voesch@b_voesch.tmi.twitch.tv PRIVMSG #lpl1 :Jebaited
+:trash_dog_!trash_dog_@trash_dog_.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:blacknight82!blacknight82@blacknight82.tmi.twitch.tv PRIVMSG #lpl1 :Baited
+:kch2312!kch2312@kch2312.tmi.twitch.tv PRIVMSG #lpl1 :NA LEE!!!
+:leoni1226!leoni1226@leoni1226.tmi.twitch.tv PRIVMSG #lpl1 :NA LEE
+:reapernathan1!reapernathan1@reapernathan1.tmi.twitch.tv PRIVMSG #lpl1 :NA LEE
+:dreamcarrys!dreamcarrys@dreamcarrys.tmi.twitch.tv PRIVMSG #lpl1 :BENGI 4Head
+:clankod!clankod@clankod.tmi.twitch.tv PRIVMSG #lpl1 :Meteos? LUJL
+:xsyd!xsyd@xsyd.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:ph3nomenal!ph3nomenal@ph3nomenal.tmi.twitch.tv PRIVMSG #lpl1 :????
+:driftaca!driftaca@driftaca.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:lorenzomarcano!lorenzomarcano@lorenzomarcano.tmi.twitch.tv PRIVMSG #lpl1 :after this game does edg plays?
+:varkannant!varkannant@varkannant.tmi.twitch.tv PRIVMSG #lpl1 :severo tonto
+:senxinxu!senxinxu@senxinxu.tmi.twitch.tv PRIVMSG #lpl1 :SWIFT
+:guibnk!guibnk@guibnk.tmi.twitch.tv PRIVMSG #lpl1 :????????????
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :BAP
+:kingofcupcakes1!kingofcupcakes1@kingofcupcakes1.tmi.twitch.tv PRIVMSG #lpl1 :CN SHOTCALLING LUL
+:hummusgoat!hummusgoat@hummusgoat.tmi.twitch.tv PRIVMSG #lpl1 :NA LEE
+:tacticalgoat!tacticalgoat@tacticalgoat.tmi.twitch.tv PRIVMSG #lpl1 :BAP
+:pepperjackcheeese!pepperjackcheeese@pepperjackcheeese.tmi.twitch.tv PRIVMSG #lpl1 :0/1/1 lee 27min ResidentSleeper
+:karuaan!karuaan@karuaan.tmi.twitch.tv PRIVMSG #lpl1 :lul
+:tehfatpanduh!tehfatpanduh@tehfatpanduh.tmi.twitch.tv PRIVMSG #lpl1 :brrrapp
+:f22raptor1986!f22raptor1986@f22raptor1986.tmi.twitch.tv PRIVMSG #lpl1 :Report lee
+:ristt!ristt@ristt.tmi.twitch.tv PRIVMSG #lpl1 :Buttholes?
+:andyswe!andyswe@andyswe.tmi.twitch.tv PRIVMSG #lpl1 :he died swiftly
+:pepperjackcheeese!pepperjackcheeese@pepperjackcheeese.tmi.twitch.tv PRIVMSG #lpl1 :meteos ResidentSleeper
+:redhairyboy!redhairyboy@redhairyboy.tmi.twitch.tv PRIVMSG #lpl1 :@lorenzomarcano yes
+:lorenzomarcano!lorenzomarcano@lorenzomarcano.tmi.twitch.tv PRIVMSG #lpl1 :play*
+:souldrive!souldrive@souldrive.tmi.twitch.tv PRIVMSG #lpl1 :Maokai derping around LUL
+:greatlebowski!greatlebowski@greatlebowski.tmi.twitch.tv PRIVMSG #lpl1 :LMFAO
+:greatlebowski!greatlebowski@greatlebowski.tmi.twitch.tv PRIVMSG #lpl1 :i fkn love LPL
+:lorenzomarcano!lorenzomarcano@lorenzomarcano.tmi.twitch.tv PRIVMSG #lpl1 :@redhairyboy ty
+:a_mula_do_time_do_gratis!a_mula_do_time_do_gratis@a_mula_do_time_do_gratis.tmi.twitch.tv PRIVMSG #lpl1 :LEE LUL
+:capsonly!capsonly@capsonly.tmi.twitch.tv PRIVMSG #lpl1 :P DIDDY TriHard
+:prawnprowler!prawnprowler@prawnprowler.tmi.twitch.tv PRIVMSG #lpl1 :that damage
+:17max93!17max93@17max93.tmi.twitch.tv PRIVMSG #lpl1 :Building a team around Swift LUL
+:baugauven!baugauven@baugauven.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:opieop_dansgame_opieop!opieop_dansgame_opieop@opieop_dansgame_opieop.tmi.twitch.tv PRIVMSG #lpl1 :PINUS FeelsBadMan
+:joshwolfisawesome!joshwolfisawesome@joshwolfisawesome.tmi.twitch.tv PRIVMSG #lpl1 :P DIDDY...
+:123zeron321!123zeron321@123zeron321.tmi.twitch.tv PRIVMSG #lpl1 :OUTSKILLED LUL
+:greatlebowski!greatlebowski@greatlebowski.tmi.twitch.tv PRIVMSG #lpl1 :LPL is like the ymca
+:imabait97!imabait97@imabait97.tmi.twitch.tv PRIVMSG #lpl1 :lags
+:zer088!zer088@zer088.tmi.twitch.tv PRIVMSG #lpl1 :swift wasnt good?
+:fallentitan_bs!fallentitan_bs@fallentitan_bs.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:alanlin12345!alanlin12345@alanlin12345.tmi.twitch.tv PRIVMSG #lpl1 :，LAG
+:na_0_10_neverforget!na_0_10_neverforget@na_0_10_neverforget.tmi.twitch.tv PRIVMSG #lpl1 :DIG BARON
+:souldrive!souldrive@souldrive.tmi.twitch.tv PRIVMSG #lpl1 :Stream lags LUL
+:reapernathan1!reapernathan1@reapernathan1.tmi.twitch.tv PRIVMSG #lpl1 :HKE
+:0000000_harambe!0000000_harambe@0000000_harambe.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:123zeron321!123zeron321@123zeron321.tmi.twitch.tv PRIVMSG #lpl1 :KA LE
+:hardyakka!hardyakka@hardyakka.tmi.twitch.tv PRIVMSG #lpl1 :LEAGUE OF LAG
+:ouzhancoskun!ouzhancoskun@ouzhancoskun.tmi.twitch.tv PRIVMSG #lpl1 :droopp
+:f22raptor1986!f22raptor1986@f22raptor1986.tmi.twitch.tv PRIVMSG #lpl1 :Winions
+:hare_affair!hare_affair@hare_affair.tmi.twitch.tv PRIVMSG #lpl1 :lag in 2017
+:imabait97!imabait97@imabait97.tmi.twitch.tv PRIVMSG #lpl1 :NA PRODUCTION FailFish
+:shuyae!shuyae@shuyae.tmi.twitch.tv PRIVMSG #lpl1 :LUL
+:alanlin12345!alanlin12345@alanlin12345.tmi.twitch.tv PRIVMSG #lpl1 :WTF DIS LAG
+:way411142!way411142@way411142.tmi.twitch.tv PRIVMSG #lpl1 :Hke
+:ai_logic!ai_logic@ai_logic.tmi.twitch.tv PRIVMSG #lpl1 :Swift BrokeBack At best it would be a jungler trade
+:satoman478!satoman478@satoman478.tmi.twitch.tv PRIVMSG #lpl1 :Wards LUL
+:sweetillness!sweetillness@sweetillness.tmi.twitch.tv PRIVMSG #lpl1 :lul
+:tsangsiuki12!tsangsiuki12@tsangsiuki12.tmi.twitch.tv PRIVMSG #lpl1 :LPL just like EU LCS lol
+:blacknight82!blacknight82@blacknight82.tmi.twitch.tv PRIVMSG #lpl1 :LOL
+:vvv_bullet!vvv_bullet@vvv_bullet.tmi.twitch.tv PRIVMSG #lpl1 :worst commentator ever
+:yendau!yendau@yendau.tmi.twitch.tv PRIVMSG #lpl1 :LAG
+:droppedon4head!droppedon4head@droppedon4head.tmi.twitch.tv PRIVMSG #lpl1 :why are the colors so off? DansGame
