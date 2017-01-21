@@ -26,7 +26,7 @@ namespace Assets.Scripts
             GameObject.name = key + " " + team;
 
             _text = GameObject.GetComponent<TextMesh>();
-            _text.text = key.ToTeam(team);
+            SetCaptialization(team);
             Team = team;
 
             WorldPosition = new Vector3(400, UnityEngine.Random.Range(0, 580), 0f);
@@ -70,6 +70,8 @@ namespace Assets.Scripts
             _siegeDriver = new SiegeDriver(this);
             Arena.S.Rioters.Add(_siegeDriver);
             UpdateScale();
+
+            Arena.S.Score(Team);
         }
 
         void UpdateScale()
@@ -80,8 +82,13 @@ namespace Assets.Scripts
                 LocalScale = Vector3.one * Mathf.Lerp(MinScale, MaxScale, _health);
         }
 
-        public void SetCaptialization(Team team)
+        public void SetCaptialization(Team team, bool scoreOnChange = false)
         {
+            var newText = Key.ToTeam(team);
+
+            if(_text.text != newText && scoreOnChange)
+                Arena.S.Score(team);
+
             _text.text = Key.ToTeam(team);
         }
     }

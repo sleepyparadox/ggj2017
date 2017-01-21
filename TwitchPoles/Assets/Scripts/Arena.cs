@@ -8,6 +8,7 @@ namespace Assets.Scripts
 {
     public class Arena : UnityObject
     {
+        public bool HasWinner;
         public const float HitRadius = 10f;
         public const float HitRadiusSqr = 10f;
 
@@ -18,8 +19,10 @@ namespace Assets.Scripts
         public static Arena S;
 
         public List<Rioter> Rioters;
+        public EndGameText EndGame;
         ParticleSystem _particleSystem;
         Rioter[,] _grid;
+        ScoringPole _pole;
 
         public Arena()
             : base(Assets.Spawn<GameObject>("Mob"))
@@ -29,8 +32,26 @@ namespace Assets.Scripts
             Rioters = new List<Rioter>();
             _particleSystem = GameObject.GetComponent<ParticleSystem>();
             _grid = new Rioter[800, 600];
+            _pole = new ScoringPole();
+            _pole.WorldPosition = ArenaTransformer.ArenaToWorld(new Vector3(Width / 2f, 0, Depth / 2f), 0);
 
             u.Update += Update;
+        }
+
+        public void Score(Team team)
+        {
+            if (HasWinner)
+                return;
+            _pole.Score(team);
+        }
+
+        public void Win(Team team)
+        {
+            if (HasWinner)
+                return;
+            HasWinner = true;
+
+            EndGame = new EndGameText(team);
         }
 
         public Rioter this[Vec3 pos]

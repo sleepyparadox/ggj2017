@@ -61,15 +61,16 @@ namespace Assets.Scripts
         {
             if (Cell.x >= Arena.Width || Cell.x < 0)
             {
+                Arena.S.Score(Cell.x < (Arena.Width / 2) ? Team.UPPER : Team.lower);
                 Die();
                 return;
             }
 
             if (Team == Team.lower)
-                _word.SetCaptialization(Cell.x < (Arena.Width * 0.3) ? Team.UPPER : Team.lower);
+                _word.SetCaptialization(Cell.x < (Arena.Width * 0.3) ? Team.UPPER : Team.lower, scoreOnChange: true);
 
             if (Team == Team.UPPER)
-                _word.SetCaptialization(Cell.x > (Arena.Width * 0.7) ? Team.lower : Team.UPPER);
+                _word.SetCaptialization(Cell.x > (Arena.Width * 0.7) ? Team.lower : Team.UPPER, scoreOnChange: true);
 
             var rioterWorldPos = ArenaTransformer.ArenaToWorld(LerpyPosition, 0);
             _word.WorldPosition = rioterWorldPos + _wordOffset;

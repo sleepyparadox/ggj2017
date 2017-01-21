@@ -75,10 +75,12 @@
     <Compile Include="Assets\Scripts\ArenaTransformer.cs" />
     <Compile Include="Assets\Scripts\Assets.cs" />
     <Compile Include="Assets\Scripts\CanvasInput.cs" />
+    <Compile Include="Assets\Scripts\EndGameText.cs" />
     <Compile Include="Assets\Scripts\GameBehaviour.cs" />
     <Compile Include="Assets\Scripts\IntroBehaviour.cs" />
     <Compile Include="Assets\Scripts\MessageDebugger.cs" />
     <Compile Include="Assets\Scripts\Rioter.cs" />
+    <Compile Include="Assets\Scripts\ScoringPole.cs" />
     <Compile Include="Assets\Scripts\SeigeWord.cs" />
     <Compile Include="Assets\Scripts\SiegeDriver.cs" />
     <Compile Include="Assets\Scripts\Team.cs" />

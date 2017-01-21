@@ -35,11 +35,11 @@ namespace Assets.Scripts
 
         private IEnumerator DoIntro()
         {
-            var height = 800;
+            var height = 1000;
 
             var startPos = transform.position + (Vector3.down * height);
 
-            float lerpTime = 10;
+            float lerpTime = 8;
 
             for (float i = 0; i < lerpTime; i += Time.deltaTime)
             {
