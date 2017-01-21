@@ -29,16 +29,14 @@ namespace Assets.Scripts
             _particleSystem = GameObject.GetComponent<ParticleSystem>();
             Grid = new Rioter[800, 600];
 
+            Spawn();
 
             u.Update += Update;
         }
 
         void Update(UnityObject uObj)
         {
-            if(_members.Count < 100)
-                Spawn();
-
-            CheckForCollides();
+            //CheckForCollides();
 
             foreach (var member in _members)
                 member.Update();
@@ -51,34 +49,37 @@ namespace Assets.Scripts
 
         void CheckForCollides()
         {
-            foreach(var leftMember in _members.Where(m => m.Team == Team.Left))
+            foreach(var leftMember in _members.Where(m => m.Team == Team.lower))
             {
-                var rightMember = _members.FirstOrDefault(m => m.Team == Team.Right 
+                var rightMember = _members.FirstOrDefault(m => m.Team == Team.UPPER 
                                                          && m.Velocity.y == 0
+                                                         && m.Position.y == 0
                                                          && (m.Position - leftMember.Position).sqrMagnitude < HitRadiusSqr);
 
                 if(rightMember != null)
                 {
-                    leftMember.Velocity += (Vector3.left + Vector3.up) * 100f;
-                    rightMember.Velocity += (Vector3.right + Vector3.up) * 100f;
+                    leftMember.Velocity += Vector3.up * 20f;
+                    rightMember.Velocity += Vector3.up * 20f;
                 }
             }
 
         }
 
-
         void Spawn()
         {
-            while(_members.Count < 100)
+            for (var iTeam = 0; iTeam < 2; ++iTeam)
             {
-                var team = Team.Left;
-                _members.Add(new Rioter()
+                var team = (Team)iTeam;
+                for (int i = 0; i < Arena.Depth; i++)
                 {
-                    Team = team,
-                    Seed = UnityEngine.Random.Range(0, 100),
-                    Position = new Vector3(team.GetArenaXStart(), 0f, _members.Count),
-                    Velocity = team.GetDirection() * UnityEngine.Random.Range(0.5f, 1f) * 4,
-                });
+                    _members.Add(new Rioter()
+                    {
+                        Team = team,
+                        Seed = UnityEngine.Random.Range(0, 100),
+                        Position = new Vector3(team.GetArenaXStart(), 0f, i),
+                        Velocity = team.GetDirection() * UnityEngine.Random.Range(0.5f, 1f) * 4,
+                    });
+                }
             }
 
 

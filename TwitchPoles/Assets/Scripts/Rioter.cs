@@ -21,10 +21,16 @@ namespace Assets.Scripts
             if (Position.y < 0)
                 Position.y = 0;
 
+            if (Position.x >= Arena.Width)
+                Position.x = 0;
+
+            if (Position.x < 0)
+                Position.x = Arena.Width - 1;
+
             if (Velocity.y != 0f)
             {
                 // bouncing
-                Velocity.y -= 10f * Time.deltaTime;
+                Velocity.y -= 50f * Time.deltaTime;
 
                 if (Mathf.Abs(Position.y) + Mathf.Abs(Velocity.y) < 10f)
                 {
@@ -32,10 +38,11 @@ namespace Assets.Scripts
                     Velocity.y = 0;
                     Position.y = 0;
                 }
-                else if (Position.y < 0)
+                else if (Position.y < 0 && Velocity.y < 0)
                 {
                     // bounce
-                    Velocity.y = Mathf.Abs(Velocity.y);
+                    Velocity.y *= -0.9f;
+                    Position.y = 0f;
                 }
             }
         }
@@ -44,7 +51,7 @@ namespace Assets.Scripts
         {
             return new ParticleSystem.Particle()
             {
-                color = Team == Team.Left ? Color.red : Color.blue,
+                color = Team == Team.lower ? Color.red : Color.blue,
                 position = ArenaTransformer.ArenaToWorld(Position, Seed),
                 size = 8f,
                 lifetime = 1000,

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 public partial class TinyCoro
 {
@@ -54,6 +55,13 @@ public partial class TinyCoro
     public static Func<bool> WaitUntil(Func<bool> conditionMet)
     {
         return conditionMet;
+    }
+
+    public static Func<bool> WaitSeconds(float duration)
+    {
+        var resumeAfter = Time.time + duration;
+
+        return () => Time.time >= resumeAfter;
     }
 
     public static Func<bool> Join(params TinyCoro[] waitFor)

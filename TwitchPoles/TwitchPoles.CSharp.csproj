@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Arena.cs" />
     <Compile Include="Assets\Scripts\ArenaTransformer.cs" />
     <Compile Include="Assets\Scripts\Assets.cs" />
+    <Compile Include="Assets\Scripts\CanvasInput.cs" />
     <Compile Include="Assets\Scripts\Game.cs" />
     <Compile Include="Assets\Scripts\MessageDebugger.cs" />
     <Compile Include="Assets\Scripts\Rioter.cs" />
@@ -88,13 +89,18 @@
     <Compile Include="Assets\Scripts\Vec3\Vec3.cs" />
     <Compile Include="Assets\Scripts\Vec3\Vec3Ray.cs" />
     <Compile Include="Assets\Scripts\Vec3\Vec3Unity.cs" />
+    <Compile Include="Assets\Scripts\SeigeWord.cs" />
+    <Compile Include="Assets\Scripts\WordPicker.cs" />
     <Compile Include="Assets\TwitchIRC-Unity-master\TwitchIRC-Unity-master\TwitchChatExample.cs" />
     <Compile Include="Assets\TwitchIRC-Unity-master\TwitchIRC-Unity-master\TwitchIRC.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Fonts\pixelmix\license.txt" />
+    <None Include="Assets\Fonts\pixelmix\readme.txt" />
     <None Include="Assets\Fonts\roboto\Apache License.txt" />
     <None Include="Assets\Resources\TwitchLogs\lpl1.txt" />
     <None Include="Assets\Resources\TwitchLogs\ruhub_dotapit.txt" />
+    <None Include="Assets\Resources\TwitchLogs\twitchplayspokemon.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

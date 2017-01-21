@@ -7,10 +7,12 @@ using Assets.Scripts;
 
 public class Game : MonoBehaviour
 {
-    public TextMesh Text;
+    public bool UseManualInput;
+    public bool DebugAllMessages;
     TwitchIRC _irc;
     MessageDebugger _messageDebugger;
     Arena _mob;
+    WordPicker _wordPicker;
 
     void Start ()
     {
@@ -18,12 +20,17 @@ public class Game : MonoBehaviour
 
         _mob = new Arena();
 
-        _messageDebugger = new MessageDebugger();
+        _wordPicker = new WordPicker();
+        if(DebugAllMessages)
+            _messageDebugger = new MessageDebugger();
 
         if (_irc.enabled)
             _irc.messageRecievedEvent.AddListener(MessageRecieved);
-        else
+        else if(!UseManualInput)
             StartCoroutine(DoFakeUpdate());
+
+        if(UseManualInput)
+            new CanvasInput().OnMessageRecieved += MessageRecieved;
 
     }
 
@@ -55,13 +62,18 @@ public class Game : MonoBehaviour
         using (var writer = new StreamWriter(logPath, true))
             writer.WriteLine(msg);
 
-        var pipeAt = msg.IndexOf(':', 2);
-        if (pipeAt >= 0)
+        if (msg.Length > 1)
         {
-            pipeAt++;
-            msg = msg.Substring(pipeAt, msg.Length - pipeAt);
+            var pipeAt = msg.IndexOf(':', 1);
+            if (pipeAt >= 0)
+            {
+                pipeAt++;
+                msg = msg.Substring(pipeAt, msg.Length - pipeAt);
+            }
         }
 
-        _messageDebugger.MessageRecieved(msg);
+        _wordPicker.MessageRecieved(msg);
+        if(_messageDebugger != null)
+            _messageDebugger.MessageRecieved(msg);
     }
 }
