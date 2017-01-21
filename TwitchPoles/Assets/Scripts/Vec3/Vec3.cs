@@ -78,4 +78,9 @@ public struct Vec3
                          a.y - b.y,
                          a.z - b.z);
     }
+
+    public override string ToString()
+    {
+        return string.Concat("[ ", x, ", ", y, ", ", z, "]");
+    }
 }

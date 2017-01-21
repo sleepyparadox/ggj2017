@@ -53,7 +53,7 @@ namespace Assets.Scripts
                     if (!spawnedOne)
                         continue;
 
-                    yield return TinyCoro.WaitSeconds(1f);
+                    yield return TinyCoro.WaitSeconds(0.25f);
                 }
                 else
                     yield return null;

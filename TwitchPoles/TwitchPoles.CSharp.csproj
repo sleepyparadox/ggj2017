@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\MessageDebugger.cs" />
     <Compile Include="Assets\Scripts\Rioter.cs" />
     <Compile Include="Assets\Scripts\SeigeWord.cs" />
+    <Compile Include="Assets\Scripts\SiegeDriver.cs" />
     <Compile Include="Assets\Scripts\Team.cs" />
     <Compile Include="Assets\Scripts\TinyCoro\TinyCoro.cs" />
     <Compile Include="Assets\Scripts\TinyCoro\TinyCoroStatic.cs" />
@@ -96,9 +97,9 @@
     <None Include="Assets\Fonts\pixelmix\license.txt" />
     <None Include="Assets\Fonts\pixelmix\readme.txt" />
     <None Include="Assets\Fonts\roboto\Apache License.txt" />
-    <None Include="Assets\Resources\TwitchLogs\lpl1.txt" />
-    <None Include="Assets\Resources\TwitchLogs\ruhub_dotapit.txt" />
-    <None Include="Assets\Resources\TwitchLogs\twitchplayspokemon.txt" />
+    <None Include="Assets\Resources\TwitchLogs.Old\opl.txt" />
+    <None Include="Assets\Resources\TwitchLogs.Old\twitchplayspokemon.txt" />
+    <None Include="Assets\Resources\TwitchLogs\nl_kripp.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

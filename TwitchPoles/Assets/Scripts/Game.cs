@@ -13,6 +13,7 @@ public class Game : MonoBehaviour
     MessageDebugger _messageDebugger;
     Arena _mob;
     WordPicker _wordPicker;
+    private Coroutine _fakeUpdate;
 
     void Start ()
     {
@@ -27,7 +28,7 @@ public class Game : MonoBehaviour
         if (_irc.enabled)
             _irc.messageRecievedEvent.AddListener(MessageRecieved);
         else if(!UseManualInput)
-            StartCoroutine(DoFakeUpdate());
+            _fakeUpdate = StartCoroutine(DoFakeUpdate());
 
         if(UseManualInput)
             new CanvasInput().OnMessageRecieved += MessageRecieved;
@@ -52,15 +53,18 @@ public class Game : MonoBehaviour
             i = (i + 1) % lines.Count;
 
             MessageRecieved(line);
-            yield return new WaitForSeconds(UnityEngine.Random.Range(0.1f, 1f));
+            yield return new WaitForSeconds(UnityEngine.Random.Range(0.5f, 0.1f));
         }
     }
 
     private void MessageRecieved(string msg)
     {
-        var logPath = string.Concat(Directory.GetCurrentDirectory(), "/Assets/Resources/TwitchLogs/", _irc.channelName, ".txt");
-        using (var writer = new StreamWriter(logPath, true))
-            writer.WriteLine(msg);
+        if(_fakeUpdate == null)
+        {
+            var logPath = string.Concat(Directory.GetCurrentDirectory(), "/Assets/Resources/TwitchLogs/", _irc.channelName, ".txt");
+            using (var writer = new StreamWriter(logPath, true))
+                writer.WriteLine(msg);
+        }
 
         if (msg.Length > 1)
         {

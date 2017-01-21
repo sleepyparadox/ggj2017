@@ -16,34 +16,53 @@ namespace Assets.Scripts
         public const int Floor = 0;
 
         public static Arena S;
-        public Rioter[,] Grid;
 
-
+        public List<Rioter> Rioters;
         ParticleSystem _particleSystem;
-        List<Rioter> _rioters;
+        Rioter[,] _grid;
 
         public Arena()
             : base(Assets.Spawn<GameObject>("Mob"))
         {
             S = this;
 
-            _rioters = new List<Rioter>();
+            Rioters = new List<Rioter>();
             _particleSystem = GameObject.GetComponent<ParticleSystem>();
-            Grid = new Rioter[800, 600];
+            _grid = new Rioter[800, 600];
 
             Spawn();
 
             u.Update += Update;
         }
 
+        public Rioter this[Vec3 pos]
+        {
+            get
+            {
+                if (pos.x < 0 || pos.x >= Width
+                    || pos.z < 0 || pos.z >= Depth)
+                    return null;
+
+                return _grid[pos.x, pos.z];
+            }
+            set
+            {
+                if (pos.x < 0 || pos.x >= Width
+                    || pos.z < 0 || pos.z >= Depth)
+                    return;
+
+                _grid[pos.x, pos.z] = value;
+            }
+        }
+
         void Update(UnityObject uObj)
         {
             //CheckForCollides();
 
-            foreach (var member in _rioters)
+            foreach (var member in Rioters)
                 member.Update();
 
-            var particles = _rioters.Select(p => p.ToParticle()).ToArray();
+            var particles = Rioters.Select(p => p.ToParticle()).ToArray();
 
             _particleSystem.SetParticles(particles, particles.Length);
             _particleSystem.time = 0f;
@@ -80,7 +99,7 @@ namespace Assets.Scripts
                         Seed = UnityEngine.Random.Range(0, 100),
                     };
                     rioter.TryMoveTo(new Vec3(team.GetArenaXStart(), 0, i), true);
-                    _rioters.Add(rioter);
+                    Rioters.Add(rioter);
                 }
             }
 

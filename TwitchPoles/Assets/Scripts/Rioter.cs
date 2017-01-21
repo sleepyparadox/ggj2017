@@ -8,10 +8,12 @@ namespace Assets.Scripts
 {
     public class Rioter
     {
-        const float Speed = 100f;//0.5f;
-        const float ActAfter = 0.5f;
+        protected const float Speed = 100f;//0.5f;
+        protected const float ActAfter = 0.5f;
+        protected float Size = 8f;
+        protected float Rotation = 0f;
         public Team Team;
-        public Vec3 ArenaCell;
+        public Vec3 Cell;
         public Vector3 LerpyPosition;
         public float Seed;
 
@@ -22,34 +24,34 @@ namespace Assets.Scripts
             _willAct -= UnityEngine.Random.Range(0, ActAfter);
         }
 
-        public void Update()
+        public virtual void Update()
         {
             _willAct += Time.deltaTime;
             if (_willAct >= 0)
             {
                 _willAct -= UnityEngine.Random.Range(0, ActAfter);
 
-                TryMoveTo(ArenaCell + Team.GetDirection());
+                TryMoveTo(Cell + Team.GetDirection());
             }
 
-            LerpyPosition = Vector3.MoveTowards(LerpyPosition, ArenaCell.ToVector3(), Speed * Time.deltaTime);
+            LerpyPosition = Vector3.MoveTowards(LerpyPosition, Cell.ToVector3(), Speed * Time.deltaTime);
         }
 
         public bool TryMoveTo(Vec3 pos, bool updateMesh = false)
         {
-            if (Arena.S.Grid[pos.x, pos.z] != null)
+            if (Arena.S[pos] != null && Arena.S[pos] != this)
                 return false; //occupied
 
             // clear old spot
-            if (Arena.S.Grid[ArenaCell.x, ArenaCell.z] == this)
-                Arena.S.Grid[ArenaCell.x, ArenaCell.z] = null;
+            if (Arena.S[Cell] == this)
+                Arena.S[Cell] = null;
 
             // move
-            ArenaCell = pos;
-            Arena.S.Grid[ArenaCell.x, ArenaCell.z] = this;
+            Cell = pos;
+            Arena.S[Cell] = this;
 
             if (updateMesh)
-                LerpyPosition = ArenaCell.ToVector3();
+                LerpyPosition = Cell.ToVector3();
 
             return true;
         }
@@ -60,10 +62,18 @@ namespace Assets.Scripts
             {
                 color = Team == Team.lower ? Color.red : Color.blue,
                 position = ArenaTransformer.ArenaToWorld(LerpyPosition, Seed),
-                size = 8f,
+                size = Size,
                 lifetime = 1000,
                 startLifetime = 500,
+                rotation = Rotation,
             };
+        }
+
+        public virtual void Die()
+        {
+            Arena.S.Rioters.Remove(this);
+            if (Arena.S[Cell] == this)
+                Arena.S[Cell] = null;
         }
     }
 
