@@ -51,6 +51,11 @@ namespace Assets.Scripts
                     || pos.z < 0 || pos.z >= Depth)
                     return;
 
+                if (value != null 
+                    && _grid[pos.x, pos.z] != null /*
+                    && _grid[pos.x, pos.z] != value*/)
+                    throw new Exception("sorry " + value + "; " + pos + " already used by " + _grid[pos.x, pos.z]);
+
                 _grid[pos.x, pos.z] = value;
             }
         }
@@ -88,6 +93,7 @@ namespace Assets.Scripts
 
         void Spawn()
         {
+            // HACK
             for (var iTeam = 0; iTeam < 2; ++iTeam)
             {
                 var team = (Team)iTeam;

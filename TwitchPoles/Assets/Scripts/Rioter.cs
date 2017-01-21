@@ -75,6 +75,11 @@ namespace Assets.Scripts
             if (Arena.S[Cell] == this)
                 Arena.S[Cell] = null;
         }
+
+        public override string ToString()
+        {
+            return "rioter at " + Cell;
+        }
     }
 
 }

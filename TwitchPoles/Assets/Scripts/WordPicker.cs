@@ -9,6 +9,7 @@ namespace Assets.Scripts
 {
     public class WordPicker
     {
+        const int MaxWords = 10;
         const string Upper = "ABCDEFJHIJKLMNOPQRSTUVWXYZ";
         const string Lower = "abcdefghijklmnopqrstuvwxyz";
         Dictionary<string, SeigeWord> _words = new Dictionary<string, SeigeWord>();
@@ -23,8 +24,8 @@ namespace Assets.Scripts
         {
             while(true)
             {
-                if (_recentLines.Any())
-                {
+                if (_recentLines.Any() && _words.Count < MaxWords)
+                { 
                     var recentIndex = UnityEngine.Random.Range(0, _recentLines.Count);
                     var recentLine = _recentLines[recentIndex];
                     _recentLines.RemoveAt(recentIndex);

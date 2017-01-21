@@ -24,11 +24,11 @@ namespace Assets.Scripts
         {
             Focus();
             if (!string.IsNullOrEmpty(_inputField.text)
-                && Input.GetKey(KeyCode.Return))
+                && Input.GetKeyDown(KeyCode.Return))
             {
                 if (OnMessageRecieved != null)
                     OnMessageRecieved(_inputField.text);
-                _inputField.text = string.Empty;
+                //_inputField.text = string.Empty; //spamming is useful
 
                 Focus();
             }

@@ -9,6 +9,7 @@ namespace Assets.Scripts
 {
     public class SiegeDriver : Rioter
     {
+        const int CellsPerPush = 4;
         int _length = 10;
         SeigeWord _word;
         Vector3 _wordOffset;
@@ -29,9 +30,6 @@ namespace Assets.Scripts
             var spawnPos = new Vec3((int)(xBound / 8f), 0,(int)(bounds.min.y / 8));
             spawnPos.x += Team.GetDirection().x * -4;
 
-            if (Arena.S[spawnPos] != null)
-                (Arena.S[spawnPos] as Rioter).Die();
-
             TryMoveTo(spawnPos, true);
 
             var rioterWorldPos = ArenaTransformer.ArenaToWorld(LerpyPosition, 0);
@@ -48,16 +46,37 @@ namespace Assets.Scripts
             foreach (var cell in CellsInWord())
             {
                 if (Arena.S[cell] != null)
-                    (Arena.S[cell] as Rioter).Die();
+                {
+                    if (Arena.S[cell] == this)
+                        continue;
+                    else
+                        Arena.S[cell].Die();
+                }
                 Arena.S[cell] = this;
             }
         }
 
         public override void Update()
         {
+            {
+                var height = new Vector3(0, 8, 0);
+                foreach (var cell in CellsInWord())
+                {
+                    var worldPos = ArenaTransformer.ArenaToWorld(cell.ToVector3(), 0);
+                    Debug.DrawLine(worldPos, worldPos + height, Color.red);
+                    height.y += 8;
+                }
+            }
+
             var rioterWorldPos = ArenaTransformer.ArenaToWorld(LerpyPosition, 0);
             _word.WorldPosition = rioterWorldPos + _wordOffset;
             _quad.transform.position = rioterWorldPos + _quadOffset;
+
+            {
+                // exit hack
+                LerpyPosition = Vector3.MoveTowards(LerpyPosition, Cell.ToVector3(), Speed * Time.deltaTime);
+                return;
+            }
 
             var nextCell = GetNextCell();
             if (Arena.S[nextCell] != null 
@@ -88,18 +107,49 @@ namespace Assets.Scripts
 
         public void Use(Team team)
         {
-
+            Debug.Log("use " + this);
+            Push(1);
         }
 
-        IEnumerable<Vec3> CellsInWord()
+        void Push(int amount)
         {
-            var cell = Cell;
-            var direction = Team == Team.lower ? 1 : -1;
-            for (int i = 0; i < _length; i++)
+            var dir = Team.GetDirection();
+            for (int i = 0; i < amount; i++)
             {
-                cell.x += direction;
-                yield return cell;
+                foreach(var cell in CellsInWord().Reverse())
+                {
+                    //Debug.Log("pushing cells; " + cell);
+                    Push(this, cell, cell + dir, dir.x);
+                }
+
+                Cell += dir;
             }
+
+        }
+        void Push(Rioter r, Vec3 from, Vec3 to, int direction, string depthPrefix = "")
+        {
+            Debug.Log(depthPrefix + "pushing " + r.GetType().Name + " " + from.x + " to " + to.x + " (it thinks its at " + r.Cell.x + ")");
+
+            if (Arena.S[to] != null)
+            {
+                Debug.Log(depthPrefix + "found " + Arena.S[to].GetType().Name + " at " + to.x);
+                var neighbourTo = to;
+                neighbourTo.x += direction;
+                Push(Arena.S[to], to, neighbourTo, direction, "  " + depthPrefix);
+
+                if (Arena.S[to] != null)
+                    throw new Exception("Failed to clear " + to);
+            }
+
+            if (Arena.S[from] == r)
+                Arena.S[from] = null;
+
+            Arena.S[to] = this;
+
+            if(!(r is SiegeDriver))
+                r.Cell = to;
+
+            Debug.Log(depthPrefix + "pushed " + r.GetType().Name + " " + from.x + " to " + to.x + " (it thinks its at " + r.Cell.x + ")");
         }
 
         Vec3 GetNextCell()
@@ -111,16 +161,35 @@ namespace Assets.Scripts
             return cell;
         }
 
+
+        IEnumerable<Vec3> CellsInWord()
+        {
+            var cell = Cell;
+            var direction = Team == Team.lower ? 1 : -1;
+            for (int i = 0; i < _length + 1; i++)
+            {
+                yield return cell;
+                cell.x += direction;
+            }
+        }
+
         public override void Die()
         {
             _word.Dispose();
             GameObject.Destroy(_quad);
+
+            foreach (var cell in CellsInWord())
+            {
+                if (Arena.S[cell] == this)
+                    Arena.S[cell] = null;
+            }
+           
             base.Die();
         }
 
         public override string ToString()
         {
-            return string.Concat(_word.Key, " ", Cell);
+            return string.Concat(_word.Key, " at ", Cell);
         }
     }
 }
