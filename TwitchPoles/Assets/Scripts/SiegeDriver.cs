@@ -10,7 +10,7 @@ namespace Assets.Scripts
     public class SiegeDriver : Rioter
     {
         const int CellsPerPush = 4;
-        int _length = 10;
+        int _length = 12;
         SeigeWord _word;
         Vector3 _wordOffset;
         Vector3 _quadOffset;
@@ -58,16 +58,6 @@ namespace Assets.Scripts
 
         public override void Update()
         {
-            {
-                var height = new Vector3(0, 8, 0);
-                foreach (var cell in CellsInWord())
-                {
-                    var worldPos = ArenaTransformer.ArenaToWorld(cell.ToVector3(), 0);
-                    Debug.DrawLine(worldPos, worldPos + height, Color.red);
-                    height.y += 8;
-                }
-            }
-
             var rioterWorldPos = ArenaTransformer.ArenaToWorld(LerpyPosition, 0);
             _word.WorldPosition = rioterWorldPos + _wordOffset;
             _quad.transform.position = rioterWorldPos + _quadOffset;
@@ -79,10 +69,7 @@ namespace Assets.Scripts
             }
 
             var nextCell = GetNextCell();
-            if (Arena.S[nextCell] != null 
-                && Arena.S[nextCell] != this
-                && CellsInWord().All(c => Arena.S[c] == null || Arena.S[c] == this )
-                )
+            if (Arena.S[nextCell] != null )
             {
                 Debug.Log(this + " stuck " + nextCell + " is occupied by " + Arena.S[nextCell]);
                 LerpyPosition = Vector3.MoveTowards(LerpyPosition, Cell.ToVector3(), Speed * Time.deltaTime);
@@ -108,7 +95,7 @@ namespace Assets.Scripts
         public void Use(Team team)
         {
             Debug.Log("use " + this);
-            Push(1);
+            Push(4);
         }
 
         void Push(int amount)
@@ -126,13 +113,11 @@ namespace Assets.Scripts
             }
 
         }
-        void Push(Rioter r, Vec3 from, Vec3 to, int direction, string depthPrefix = "")
-        {
-            Debug.Log(depthPrefix + "pushing " + r.GetType().Name + " " + from.x + " to " + to.x + " (it thinks its at " + r.Cell.x + ")");
 
+        static void Push(Rioter rioter, Vec3 from, Vec3 to, int direction, string depthPrefix = "")
+        {
             if (Arena.S[to] != null)
             {
-                Debug.Log(depthPrefix + "found " + Arena.S[to].GetType().Name + " at " + to.x);
                 var neighbourTo = to;
                 neighbourTo.x += direction;
                 Push(Arena.S[to], to, neighbourTo, direction, "  " + depthPrefix);
@@ -141,15 +126,13 @@ namespace Assets.Scripts
                     throw new Exception("Failed to clear " + to);
             }
 
-            if (Arena.S[from] == r)
+            if (Arena.S[from] == rioter)
                 Arena.S[from] = null;
 
-            Arena.S[to] = this;
+            Arena.S[to] = rioter;
 
-            if(!(r is SiegeDriver))
-                r.Cell = to;
-
-            Debug.Log(depthPrefix + "pushed " + r.GetType().Name + " " + from.x + " to " + to.x + " (it thinks its at " + r.Cell.x + ")");
+            if(!(rioter is SiegeDriver))
+                rioter.Cell = to;
         }
 
         Vec3 GetNextCell()
@@ -160,7 +143,6 @@ namespace Assets.Scripts
             cell.x += direction;
             return cell;
         }
-
 
         IEnumerable<Vec3> CellsInWord()
         {

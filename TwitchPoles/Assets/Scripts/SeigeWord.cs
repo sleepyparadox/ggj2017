@@ -17,7 +17,6 @@ namespace Assets.Scripts
         int _usesNeed = 2;
         float _health = 0;
         TextMesh _text;
-        GameObject _quad;
         SiegeDriver _siegeDriver;
 
         public SeigeWord(string key, Team team)
@@ -30,7 +29,7 @@ namespace Assets.Scripts
             _text.text = key.ToTeam(team);
             Team = team;
 
-            WorldPosition = new Vector3(400, UnityEngine.Random.Range(0, 600), 0f);
+            WorldPosition = new Vector3(400, UnityEngine.Random.Range(0, 580), 0f);
 
             Use(team);
 

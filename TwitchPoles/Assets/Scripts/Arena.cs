@@ -64,36 +64,26 @@ namespace Assets.Scripts
         {
             //CheckForCollides();
 
-            foreach (var member in Rioters)
+            foreach (var member in Rioters.ToList())
                 member.Update();
 
             var particles = Rioters.Select(p => p.ToParticle()).ToArray();
 
             _particleSystem.SetParticles(particles, particles.Length);
             _particleSystem.time = 0f;
+
+            for (int x = 0; x < Width; x++)
+            {
+                for (int z = 0; z < Depth; z++)
+                {
+                    if (_grid[x, z] == null)
+                        continue;
+                }
+            }
         }
-
-        //void CheckForCollides()
-        //{
-        //    foreach(var leftMember in _members.Where(m => m.Team == Team.lower))
-        //    {
-        //        var rightMember = _members.FirstOrDefault(m => m.Team == Team.UPPER 
-        //                                                 && m.Velocity.y == 0
-        //                                                 && m.LerpyPosition.y == 0
-        //                                                 && (m.LerpyPosition - leftMember.LerpyPosition).sqrMagnitude < HitRadiusSqr);
-
-        //        if(rightMember != null)
-        //        {
-        //            leftMember.Velocity += Vector3.up * 20f;
-        //            rightMember.Velocity += Vector3.up * 20f;
-        //        }
-        //    }
-
-        //}
 
         void Spawn()
         {
-            // HACK
             for (var iTeam = 0; iTeam < 2; ++iTeam)
             {
                 var team = (Team)iTeam;
@@ -108,19 +98,6 @@ namespace Assets.Scripts
                     Rioters.Add(rioter);
                 }
             }
-
-
-            //for(var i = 0; i < 2; ++i)
-            //{
-            //    var team = (Team)i;
-            //    _members.Add(new Rioter()
-            //    {
-            //        Team = team,
-            //        Seed = UnityEngine.Random.Range(0, 100),
-            //        Position = new Vector3(team.GetArenaXStart(), 0f, (int)UnityEngine.Random.Range(0, ArenaTransformer.Size.z)),
-            //        Velocity = team.GetDirection() * UnityEngine.Random.Range(0.5f, 1f) * 100f,
-            //    });
-            //}
         }
     }
 

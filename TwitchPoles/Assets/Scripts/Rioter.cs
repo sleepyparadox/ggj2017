@@ -35,6 +35,9 @@ namespace Assets.Scripts
             }
 
             LerpyPosition = Vector3.MoveTowards(LerpyPosition, Cell.ToVector3(), Speed * Time.deltaTime);
+
+            if (Cell.x >= Arena.Width || Cell.x < 0)
+                Die();
         }
 
         public bool TryMoveTo(Vec3 pos, bool updateMesh = false)

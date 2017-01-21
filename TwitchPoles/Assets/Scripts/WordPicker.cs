@@ -9,7 +9,7 @@ namespace Assets.Scripts
 {
     public class WordPicker
     {
-        const int MaxWords = 10;
+        const int MaxWords = 5;
         const string Upper = "ABCDEFJHIJKLMNOPQRSTUVWXYZ";
         const string Lower = "abcdefghijklmnopqrstuvwxyz";
         Dictionary<string, SeigeWord> _words = new Dictionary<string, SeigeWord>();
