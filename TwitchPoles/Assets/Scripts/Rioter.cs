@@ -8,43 +8,50 @@ namespace Assets.Scripts
 {
     public class Rioter
     {
+        const float Speed = 100f;//0.5f;
+        const float ActAfter = 0.5f;
         public Team Team;
-        public Vec3 TargetCell;
-        public Vector3 Position;
-        public Vector3 Velocity;
+        public Vec3 ArenaCell;
+        public Vector3 LerpyPosition;
         public float Seed;
+
+        float _willAct = 0f;
+
+        public Rioter()
+        {
+            _willAct -= UnityEngine.Random.Range(0, ActAfter);
+        }
 
         public void Update()
         {
-            Position += Velocity * Time.deltaTime;
-
-            if (Position.y < 0)
-                Position.y = 0;
-
-            if (Position.x >= Arena.Width)
-                Position.x = 0;
-
-            if (Position.x < 0)
-                Position.x = Arena.Width - 1;
-
-            if (Velocity.y != 0f)
+            _willAct += Time.deltaTime;
+            if (_willAct >= 0)
             {
-                // bouncing
-                Velocity.y -= 50f * Time.deltaTime;
+                _willAct -= UnityEngine.Random.Range(0, ActAfter);
 
-                if (Mathf.Abs(Position.y) + Mathf.Abs(Velocity.y) < 10f)
-                {
-                    // stop
-                    Velocity.y = 0;
-                    Position.y = 0;
-                }
-                else if (Position.y < 0 && Velocity.y < 0)
-                {
-                    // bounce
-                    Velocity.y *= -0.9f;
-                    Position.y = 0f;
-                }
+                TryMoveTo(ArenaCell + Team.GetDirection());
             }
+
+            LerpyPosition = Vector3.MoveTowards(LerpyPosition, ArenaCell.ToVector3(), Speed * Time.deltaTime);
+        }
+
+        public bool TryMoveTo(Vec3 pos, bool updateMesh = false)
+        {
+            if (Arena.S.Grid[pos.x, pos.z] != null)
+                return false; //occupied
+
+            // clear old spot
+            if (Arena.S.Grid[ArenaCell.x, ArenaCell.z] == this)
+                Arena.S.Grid[ArenaCell.x, ArenaCell.z] = null;
+
+            // move
+            ArenaCell = pos;
+            Arena.S.Grid[ArenaCell.x, ArenaCell.z] = this;
+
+            if (updateMesh)
+                LerpyPosition = ArenaCell.ToVector3();
+
+            return true;
         }
 
         public ParticleSystem.Particle ToParticle()
@@ -52,7 +59,7 @@ namespace Assets.Scripts
             return new ParticleSystem.Particle()
             {
                 color = Team == Team.lower ? Color.red : Color.blue,
-                position = ArenaTransformer.ArenaToWorld(Position, Seed),
+                position = ArenaTransformer.ArenaToWorld(LerpyPosition, Seed),
                 size = 8f,
                 lifetime = 1000,
                 startLifetime = 500,

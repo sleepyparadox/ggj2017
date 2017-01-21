@@ -20,13 +20,11 @@ namespace Assets.Scripts
 
         public static Vector3 ArenaToWorld(Vector3 arenaPos, float seed)
         {
-            var worldPos = arenaPos;
-            worldPos.x = Mathf.Floor(arenaPos.x);
-            worldPos.z = Mathf.Floor(arenaPos.z);
+            var worldPos = arenaPos * 8;
+            worldPos.x = Mathf.Floor(worldPos.x);
+            worldPos.z = Mathf.Floor(worldPos.z);
 
             worldPos.y = Mathf.Floor(worldPos.y) + worldPos.z;
-
-            worldPos *= 8;
 
             if (arenaPos.y == 0f)
             {

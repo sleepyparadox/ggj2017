@@ -24,23 +24,23 @@ namespace Assets.Scripts
 
             throw new NotImplementedException();
         }
-        public static float GetArenaXStart(this Team team)
+        public static int GetArenaXStart(this Team team)
         {
             if (team == Team.lower)
                 return 0;
 
             if (team == Team.UPPER)
-                return Arena.Width - 1;
+                return Arena.Width -1;
 
             throw new NotImplementedException();
         }
-        public static Vector3 GetDirection(this Team team)
+        public static Vec3 GetDirection(this Team team)
         {
             if (team == Team.lower)
-                return Vector3.right;
+                return Vec3.Right;
 
             if (team == Team.UPPER)
-                return Vector3.left;
+                return Vec3.Left;
 
             throw new NotImplementedException();
         }
