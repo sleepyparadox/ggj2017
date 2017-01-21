@@ -8,28 +8,28 @@ namespace Assets.Scripts
 {
     public enum Team
     {
-        East,
-        West
+        Left,
+        Right,
     }
 
     public static class TeamUtility
     {
         public static float GetArenaXStart(this Team team)
         {
-            if (team == Team.East)
+            if (team == Team.Left)
                 return 0;
 
-            if (team == Team.West)
+            if (team == Team.Right)
                 return World.Size.x;
 
             throw new NotImplementedException();
         }
         public static Vector3 GetDirection(this Team team)
         {
-            if (team == Team.East)
+            if (team == Team.Left)
                 return Vector3.right;
 
-            if (team == Team.West)
+            if (team == Team.Right)
                 return Vector3.left;
 
             throw new NotImplementedException();

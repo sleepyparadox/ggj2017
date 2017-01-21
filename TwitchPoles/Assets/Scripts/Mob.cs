@@ -8,6 +8,9 @@ namespace Assets.Scripts
 {
     public class Mob : UnityObject
     {
+        public const float HitRadius = 10f;
+        public const float HitRadiusSqr = 10f;
+
         ParticleSystem _particleSystem;
         List<Member> _members;
 
@@ -26,6 +29,8 @@ namespace Assets.Scripts
             if(_members.Count < 100)
                 Spawn();
 
+            CheckForCollides();
+
             foreach (var member in _members)
                 member.Update();
 
@@ -33,6 +38,23 @@ namespace Assets.Scripts
 
             _particleSystem.SetParticles(particles, particles.Length);
             _particleSystem.time = 0f;
+        }
+
+        void CheckForCollides()
+        {
+            foreach(var leftMember in _members.Where(m => m.Team == Team.Left))
+            {
+                var rightMember = _members.FirstOrDefault(m => m.Team == Team.Right 
+                                                         && m.Velocity.y == 0
+                                                         && (m.Position - leftMember.Position).sqrMagnitude < HitRadiusSqr);
+
+                if(rightMember != null)
+                {
+                    leftMember.Velocity += (Vector3.left + Vector3.up) * 100f;
+                    rightMember.Velocity += (Vector3.right + Vector3.up) * 100f;
+                }
+            }
+
         }
 
 
