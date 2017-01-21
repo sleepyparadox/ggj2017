@@ -58,6 +58,18 @@ namespace Assets.Scripts
 
         public override void Update()
         {
+            if (Cell.x >= Arena.Width || Cell.x < 0)
+            {
+                Die();
+                return;
+            }
+
+            if (Team == Team.lower)
+                _word.SetCaptialization(Cell.x < (Arena.Width * 0.3) ? Team.UPPER : Team.lower);
+
+            if (Team == Team.UPPER)
+                _word.SetCaptialization(Cell.x > (Arena.Width * 0.7) ? Team.lower : Team.UPPER);
+
             var rioterWorldPos = ArenaTransformer.ArenaToWorld(LerpyPosition, 0);
             _word.WorldPosition = rioterWorldPos + _wordOffset;
             _quad.transform.position = rioterWorldPos + _quadOffset;
@@ -95,15 +107,16 @@ namespace Assets.Scripts
         public void Use(Team team)
         {
             Debug.Log("use " + this);
-            Push(4);
+            Push(team, 4);
         }
 
-        void Push(int amount)
+        void Push(Team team, int amount)
         {
-            var dir = Team.GetDirection();
+            var dir = team.GetDirection();
             for (int i = 0; i < amount; i++)
             {
-                foreach(var cell in CellsInWord().Reverse())
+                var cells = team == Team ? CellsInWord().Reverse() : CellsInWord();
+                foreach (var cell in cells)
                 {
                     //Debug.Log("pushing cells; " + cell);
                     Push(this, cell, cell + dir, dir.x);

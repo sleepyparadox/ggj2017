@@ -27,7 +27,7 @@ public class Game : MonoBehaviour
 
         if (_irc.enabled)
             _irc.messageRecievedEvent.AddListener(MessageRecieved);
-        else if(!UseManualInput)
+        else if(!UseManualInput && Application.isEditor)
             _fakeUpdate = StartCoroutine(DoFakeUpdate());
 
         if(UseManualInput)
@@ -59,7 +59,7 @@ public class Game : MonoBehaviour
 
     private void MessageRecieved(string msg)
     {
-        if(_fakeUpdate == null)
+        if(_fakeUpdate == null && Application.isEditor)
         {
             var logPath = string.Concat(Directory.GetCurrentDirectory(), "/Assets/Resources/TwitchLogs/", _irc.channelName, ".txt");
             using (var writer = new StreamWriter(logPath, true))

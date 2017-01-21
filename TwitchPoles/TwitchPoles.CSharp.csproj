@@ -99,7 +99,10 @@
     <None Include="Assets\Fonts\roboto\Apache License.txt" />
     <None Include="Assets\Resources\TwitchLogs.Old\opl.txt" />
     <None Include="Assets\Resources\TwitchLogs.Old\twitchplayspokemon.txt" />
+    <None Include="Assets\Resources\TwitchLogs\dotapit.txt" />
+    <None Include="Assets\Resources\TwitchLogs\garenatw.txt" />
     <None Include="Assets\Resources\TwitchLogs\nl_kripp.txt" />
+    <None Include="Assets\Resources\TwitchLogs\sleepyparadox.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

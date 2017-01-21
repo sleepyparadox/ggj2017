@@ -79,5 +79,10 @@ namespace Assets.Scripts
             else
                 LocalScale = Vector3.one * Mathf.Lerp(MinScale, MaxScale, _health);
         }
+
+        public void SetCaptialization(Team team)
+        {
+            _text.text = Key.ToTeam(team);
+        }
     }
 }

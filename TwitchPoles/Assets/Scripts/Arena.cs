@@ -30,8 +30,6 @@ namespace Assets.Scripts
             _particleSystem = GameObject.GetComponent<ParticleSystem>();
             _grid = new Rioter[800, 600];
 
-            Spawn();
-
             u.Update += Update;
         }
 
@@ -62,7 +60,7 @@ namespace Assets.Scripts
 
         void Update(UnityObject uObj)
         {
-            //CheckForCollides();
+            Spawn();
 
             foreach (var member in Rioters.ToList())
                 member.Update();
@@ -89,12 +87,26 @@ namespace Assets.Scripts
                 var team = (Team)iTeam;
                 for (int i = 0; i < Arena.Depth; i++)
                 {
+                    var alreadyExists = false;
+                    for (int x = 0; x < Width; x++)
+                    {
+                        if(_grid[x, i] != null && _grid[x, i].Team == team)
+                        {
+                            alreadyExists = true;
+                            break;
+                        }
+                    }
+
+                    var startX = team.GetArenaXStart();
+                    if (alreadyExists || _grid[startX, i] != null)
+                        continue;
+
                     var rioter = new Rioter()
                     {
                         Team = team,
                         Seed = UnityEngine.Random.Range(0, 100),
                     };
-                    rioter.TryMoveTo(new Vec3(team.GetArenaXStart(), 0, i), true);
+                    rioter.TryMoveTo(new Vec3(startX, 0, i), true);
                     Rioters.Add(rioter);
                 }
             }
