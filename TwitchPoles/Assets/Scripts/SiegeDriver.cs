@@ -20,15 +20,16 @@ namespace Assets.Scripts
         {
             _word = word;
 
-            Size = 16f;
             Rotation = 45f;
             Team = word.Team;
 
             var bounds = word.GameObject.GetComponent<Renderer>().bounds;
 
             var xBound = Team == Team.lower ? bounds.min.x : bounds.max.x;
-            var spawnPos = new Vec3((int)(xBound / 8f), 0,(int)(bounds.min.y / 8));
-            spawnPos.x += Team.GetDirection().x * -4;
+            var spawnPos = new Vec3((int)(bounds.center.x / 8f), 0,(int)(bounds.min.y / 8));
+            spawnPos.x += Team.GetDirection().x * -1;
+            _length = (int)(bounds.size.x / 8) + 5;
+
 
             TryMoveTo(spawnPos, true);
 
