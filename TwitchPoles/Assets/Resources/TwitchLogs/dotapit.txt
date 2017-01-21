@@ -531,3 +531,5 @@ ss
 ss
 ss
 ss
+:alecogg!alecogg@alecogg.tmi.twitch.tv PRIVMSG #dotapit :999 FrankerZ PREPARE FrankerZ YOUR FrankerZ FRANKERZ FrankerZ FACES FrankerZ PUPPEY FrankerZ FACE FrankerZ GOT FrankerZ DELETED FrankerZ LUL FrankerZ
+:alecogg!alecogg@alecogg.tmi.twitch.tv PRIVMSG #dotapit :999 FrankerZ PREPARE FrankerZ YOUR FrankerZ FRANKERZ FrankerZ FACES FrankerZ PUPPEY FrankerZ FACE FrankerZ GOT FrankerZ DELETED FrankerZ LUL FrankerZ

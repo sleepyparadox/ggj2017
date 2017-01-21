@@ -5,7 +5,7 @@ using System.IO;
 using System.Collections.Generic;
 using Assets.Scripts;
 
-public class Game : MonoBehaviour
+public class GameBehaviour : MonoBehaviour
 {
     public bool UseManualInput;
     public bool DebugAllMessages;
