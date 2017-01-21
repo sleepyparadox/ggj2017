@@ -20,7 +20,7 @@ namespace Assets.Scripts
                 return 0;
 
             if (team == Team.Right)
-                return World.Size.x;
+                return ArenaTransformer.Size.x;
 
             throw new NotImplementedException();
         }

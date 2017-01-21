@@ -10,13 +10,13 @@ public class Game : MonoBehaviour
     public TextMesh Text;
     TwitchIRC _irc;
     MessageDebugger _messageDebugger;
-    Mob _mob;
+    Arena _mob;
 
     void Start ()
     {
         _irc = this.GetComponent<TwitchIRC>();
 
-        _mob = new Mob();
+        _mob = new Arena();
 
         _messageDebugger = new MessageDebugger();
 

@@ -6,11 +6,10 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class Member
+    public class Rioter
     {
-        public const float MaxSpeed = 100;
-        public const float Acceleration = 100;
         public Team Team;
+        public Vec3 TargetCell;
         public Vector3 Position;
         public Vector3 Velocity;
         public float Seed;
@@ -21,12 +20,6 @@ namespace Assets.Scripts
 
             if (Position.y < 0)
                 Position.y = 0;
-
-            if(Team == Team.Left && Velocity.x < MaxSpeed)
-                Velocity.x = Mathf.MoveTowards(Velocity.x, MaxSpeed, Acceleration * Time.deltaTime);
-            if (Team == Team.Right && Velocity.x > -MaxSpeed)
-                Velocity.x = Mathf.MoveTowards(Velocity.x, -MaxSpeed, Acceleration * Time.deltaTime);
-
 
             if (Velocity.y != 0f)
             {
@@ -52,8 +45,8 @@ namespace Assets.Scripts
             return new ParticleSystem.Particle()
             {
                 color = Team == Team.Left ? Color.red : Color.blue,
-                position = World.ArenaToWorld(Position, Seed),
-                size = 100f,
+                position = ArenaTransformer.ArenaToWorld(Position, Seed),
+                size = 8f,
                 lifetime = 1000,
                 startLifetime = 500,
             };

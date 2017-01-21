@@ -71,11 +71,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Arena.cs" />
+    <Compile Include="Assets\Scripts\ArenaTransformer.cs" />
     <Compile Include="Assets\Scripts\Assets.cs" />
     <Compile Include="Assets\Scripts\Game.cs" />
-    <Compile Include="Assets\Scripts\Member.cs" />
     <Compile Include="Assets\Scripts\MessageDebugger.cs" />
-    <Compile Include="Assets\Scripts\Mob.cs" />
+    <Compile Include="Assets\Scripts\Rioter.cs" />
     <Compile Include="Assets\Scripts\Team.cs" />
     <Compile Include="Assets\Scripts\TinyCoro\TinyCoro.cs" />
     <Compile Include="Assets\Scripts\TinyCoro\TinyCoroStatic.cs" />
@@ -84,7 +85,9 @@
     <Compile Include="Assets\Scripts\UnityObject\UnityObject.cs" />
     <Compile Include="Assets\Scripts\UnityObject\UnityObjectBehaviour.cs" />
     <Compile Include="Assets\Scripts\UnityObject\UnityUtility.cs" />
-    <Compile Include="Assets\Scripts\World.cs" />
+    <Compile Include="Assets\Scripts\Vec3\Vec3.cs" />
+    <Compile Include="Assets\Scripts\Vec3\Vec3Ray.cs" />
+    <Compile Include="Assets\Scripts\Vec3\Vec3Unity.cs" />
     <Compile Include="Assets\TwitchIRC-Unity-master\TwitchIRC-Unity-master\TwitchChatExample.cs" />
     <Compile Include="Assets\TwitchIRC-Unity-master\TwitchIRC-Unity-master\TwitchIRC.cs" />
   </ItemGroup>
