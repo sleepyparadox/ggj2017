@@ -81,7 +81,7 @@
     <Compile Include="Assets\Scripts\MessageDebugger.cs" />
     <Compile Include="Assets\Scripts\Rioter.cs" />
     <Compile Include="Assets\Scripts\ScoringPole.cs" />
-    <Compile Include="Assets\Scripts\SeigeWord.cs" />
+    <Compile Include="Assets\Scripts\SiegeWord.cs" />
     <Compile Include="Assets\Scripts\SiegeDriver.cs" />
     <Compile Include="Assets\Scripts\Team.cs" />
     <Compile Include="Assets\Scripts\TinyCoro\TinyCoro.cs" />

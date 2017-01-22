@@ -14,6 +14,16 @@ namespace Assets.Scripts
 
     public static class TeamUtility
     {
+        public static Team GetOpponent(this Team team)
+        {
+            if (team == Team.lower)
+                return Team.UPPER;
+
+            if (team == Team.UPPER)
+                return Team.lower;
+
+            throw new NotImplementedException();
+        }
         public static string ToTeam(this string src, Team team)
         {
             if (team == Team.lower)
@@ -31,6 +41,17 @@ namespace Assets.Scripts
 
             if (team == Team.UPPER)
                 return Arena.Width -1;
+
+            throw new NotImplementedException();
+        }
+
+        public static int GetWordXStart(this Team team)
+        {
+            if (team == Team.lower)
+                return (int)(Arena.Width * 0.31f);
+
+            if (team == Team.UPPER)
+                return (int)(Arena.Width * 0.69f);
 
             throw new NotImplementedException();
         }

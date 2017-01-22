@@ -7,11 +7,12 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class SeigeWord : UnityObject
+    public class SiegeWord : UnityObject
     {
         const float MinScale = 1f;
         const float MaxScale = 4f;
-        const float ShrinkSpeed = 1f;
+        const float ShrinkSpeed = 0.5f;
+        public float LastUsedAt = 0f;
         public readonly string Key;
         public readonly Team Team;
         int _usesNeed = 2;
@@ -19,7 +20,7 @@ namespace Assets.Scripts
         TextMesh _text;
         SiegeDriver _siegeDriver;
 
-        public SeigeWord(string key, Team team)
+        public SiegeWord(string key, Team team)
             : base(Assets.Spawn<GameObject>("Word"))
         {
             Key = key;
@@ -29,7 +30,7 @@ namespace Assets.Scripts
             SetCaptialization(team);
             Team = team;
 
-            WorldPosition = new Vector3(400, UnityEngine.Random.Range(0, 580), 0f);
+            WorldPosition = new Vector3(team.GetWordXStart() * 8, UnityEngine.Random.Range(32, 568), 0f);
 
             Use(team);
 
@@ -47,6 +48,11 @@ namespace Assets.Scripts
 
         public void Use(Team team)
         {
+            if (IsDisposed)
+                return;
+
+            LastUsedAt = Time.time;
+
             if (_siegeDriver != null)
                 _siegeDriver.Use(team);
             else

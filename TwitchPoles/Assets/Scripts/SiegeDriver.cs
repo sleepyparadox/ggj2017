@@ -11,12 +11,12 @@ namespace Assets.Scripts
     {
         const int CellsPerPush = 4;
         int _length = 12;
-        SeigeWord _word;
+        SiegeWord _word;
         Vector3 _wordOffset;
         Vector3 _quadOffset;
         GameObject _quad;
 
-        public SiegeDriver(SeigeWord word)
+        public SiegeDriver(SiegeWord word)
         {
             _word = word;
 

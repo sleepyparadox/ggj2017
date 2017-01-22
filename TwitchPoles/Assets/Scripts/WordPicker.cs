@@ -11,13 +11,13 @@ namespace Assets.Scripts
     {
         const string Upper = "ABCDEFJHIJKLMNOPQRSTUVWXYZ";
         const string Lower = "abcdefghijklmnopqrstuvwxyz";
-        Dictionary<string, SeigeWord> _words = new Dictionary<string, SeigeWord>();
+        Dictionary<string, SiegeWord> _words = new Dictionary<string, SiegeWord>();
         List<string> _recentLines = new List<string>();
 
         public WordPicker()
         {
             TinyCoro.SpawnNext(DoPick);
-            TinyCoro.SpawnNext(PushRandom);
+            TinyCoro.SpawnNext(PushbackUnusedWords);
 
         }
 
@@ -32,9 +32,14 @@ namespace Assets.Scripts
                     _recentLines.RemoveAt(recentIndex);
 
                     var spawnedOne = false;
+                    var handledKeys = new List<string>();
                     foreach (var word in recentLine.Split(' '))
                     {
                         var key = word.ToLower();
+                        if (handledKeys.Contains(key))
+                            continue;
+                        handledKeys.Add(key);
+
                         Team wordTeam;
                         if (GetTeam(word, out wordTeam))
                         {
@@ -45,10 +50,10 @@ namespace Assets.Scripts
                             }
 
                             spawnedOne = true;
-                            var seigeWord = new SeigeWord(key, wordTeam);
+                            var seigeWord = new SiegeWord(key, wordTeam);
 
                             _words.Add(key, seigeWord);
-                            seigeWord.OnDispose += d => _words.Remove((d as SeigeWord).Key);
+                            seigeWord.OnDispose += d => _words.Remove((d as SiegeWord).Key);
                         }
                     }
 
@@ -65,11 +70,16 @@ namespace Assets.Scripts
         public void MessageRecieved(string msg)
         {
             var used = false;
+            var handledKeys = new List<string>();
             foreach (var word in msg.Split(' '))
             {
                 Team wordTeam;
                 if(GetTeam(word, out wordTeam))
                 {
+                    var key = word.ToLower();
+                    if (handledKeys.Contains(key))
+                        continue;
+                    handledKeys.Add(key);
                     used = used ||  WordArrived(wordTeam, word.ToTeam(wordTeam));
                 }
             }
@@ -119,20 +129,18 @@ namespace Assets.Scripts
             return false;
         }
 
-        private IEnumerator PushRandom()
+        private IEnumerator PushbackUnusedWords()
         {
             while(true)
             {
-                foreach(var word in _words.Values.OrderBy(w => UnityEngine.Random.Range(0, 100)).ToList())
+                foreach(var word in _words.Values.Where(w => (Time.time - w.LastUsedAt) > 10f).ToList())
                 {
-                    // bias towards upper case because mobile device caps can be dodgy
-                    var team = UnityEngine.Random.Range(0, 100) < 40 ? Team.lower : Team.UPPER;
-                    word.Use(team);
+                    word.Use(word.Team.GetOpponent());
 
                     yield return TinyCoro.WaitSeconds(0.5f);
                 }
 
-                yield return TinyCoro.WaitSeconds(5f);
+                yield return TinyCoro.WaitSeconds(3f);
             }
         }
 
