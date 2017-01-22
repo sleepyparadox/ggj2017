@@ -1,0 +1,8 @@
+#Oauth token from API or from a site using it: www.twitchapps.com/tmi
+oauth=oauth:fq39zmd2rp4m43yrr3thhz6fr7rx49
+
+#your twitch account
+nickName=sleepyparadox
+
+#chat twitch account
+channelName=sleepyparadox

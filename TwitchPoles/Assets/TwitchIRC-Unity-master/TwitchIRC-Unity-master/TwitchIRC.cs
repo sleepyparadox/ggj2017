@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 
 public class TwitchIRC : MonoBehaviour
 {
@@ -21,6 +22,23 @@ public class TwitchIRC : MonoBehaviour
     private System.Threading.Thread inProc, outProc;
     private void StartIRC()
     {
+        const string OauthKey = "oauth=";
+        const string NickNameKey = "nickName=";
+        const string ChannelNameKey = "channelName=";
+
+        var configPath = Directory.GetCurrentDirectory() + "/config.txt";
+        foreach (var line in File.ReadAllLines(configPath))
+        {
+            if (line.StartsWith(OauthKey))
+                oauth = line.Substring(OauthKey.Length, line.Length - OauthKey.Length);
+
+            if (line.StartsWith(NickNameKey))
+                nickName = line.Substring(NickNameKey.Length, line.Length - NickNameKey.Length);
+
+            if (line.StartsWith(ChannelNameKey))
+                channelName = line.Substring(ChannelNameKey.Length, line.Length - ChannelNameKey.Length);
+        }
+
         System.Net.Sockets.TcpClient sock = new System.Net.Sockets.TcpClient();
         sock.Connect(server, port);
         if (!sock.Connected)
