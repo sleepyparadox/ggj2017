@@ -81,7 +81,7 @@ namespace Assets.Scripts
         {
             return new ParticleSystem.Particle()
             {
-                color = Team == Team.lower ? Color.red : Color.blue,
+                color = Team.ToColor(false),
                 position = ArenaTransformer.ArenaToWorld(LerpyPosition, Seed),
                 size = Size,
                 lifetime = 1000,

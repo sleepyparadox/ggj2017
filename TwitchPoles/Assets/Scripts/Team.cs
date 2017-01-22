@@ -14,6 +14,20 @@ namespace Assets.Scripts
 
     public static class TeamUtility
     {
+        public static Color ToColor(this Team team, bool isTextMesh)
+        {
+            var color = Color.white;
+            if (team == Team.lower)
+                color = Color.red;
+
+            if (team == Team.UPPER)
+                color = Color.blue;
+
+            if (isTextMesh)
+                color = Color.Lerp(color, Color.black, 0.75f);
+
+            return color;
+        }
         public static Team GetOpponent(this Team team)
         {
             if (team == Team.lower)

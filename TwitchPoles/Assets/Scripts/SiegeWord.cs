@@ -97,6 +97,7 @@ namespace Assets.Scripts
                 Arena.S.Score(team);
 
             _text.text = Key.ToTeam(team);
+            _text.color = team.ToColor(true);
         }
     }
 }

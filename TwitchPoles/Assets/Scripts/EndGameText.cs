@@ -18,6 +18,7 @@ namespace Assets.Scripts
         {
             _winningTeam = team;
             _text = GameObject.GetComponent<TextMesh>();
+            _text.color = team.ToColor(false);
             TinyCoro.SpawnNext(EndTheGame);
         }
 
@@ -36,7 +37,7 @@ namespace Assets.Scripts
                 yield return TinyCoro.WaitSeconds(0.1f);
             }
 
-            yield return TinyCoro.WaitSeconds(10f);
+            yield return TinyCoro.WaitSeconds(5f);
 
             foreach (var coro in TinyCoro.AllCoroutines.ToList())
                 coro.Kill();

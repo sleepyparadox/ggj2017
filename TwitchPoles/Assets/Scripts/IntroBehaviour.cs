@@ -35,7 +35,7 @@ namespace Assets.Scripts
 
         private IEnumerator DoIntro()
         {
-            var height = 1000;
+            var height = 1100;
 
             var startPos = transform.position + (Vector3.down * height);
 

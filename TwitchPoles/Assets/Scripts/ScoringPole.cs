@@ -13,11 +13,13 @@ namespace Assets.Scripts
         const int PointsToWin = 10;
         int _score;
         float _anglePerPoint = 10f;
+        Renderer _poleRider;
 
         public ScoringPole()
             : base (Assets.Spawn<GameObject>("ScoringPole"))
         {
             _anglePerPoint = 90f / PointsToWin;
+            _poleRider = FindChildAt("POOOOLE RIIIIDER").GetComponent<Renderer>();
             u.Update += Update;
         }
 
@@ -37,6 +39,11 @@ namespace Assets.Scripts
                 if (_score >= PointsToWin)
                     Arena.S.Win(Team.UPPER);
             }
+
+            if (_score == 0)
+                _poleRider.material.SetColor("Color", Color.white);
+            else
+                _poleRider.material.SetColor("Color", _score > 0 ? Team.UPPER.ToColor(false) : Team.lower.ToColor(false));
         }
 
         public float GetScoreNormalized(Team team)
