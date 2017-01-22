@@ -39,6 +39,15 @@ namespace Assets.Scripts
             }
         }
 
+        public float GetScoreNormalized(Team team)
+        {
+            var upperScore = (_score + PointsToWin) / (PointsToWin * 2f);
+            if (team == Team.UPPER)
+                return upperScore;
+            else
+                return 1f - upperScore;
+        }
+
         void Update(UnityObject uObj)
         {
             var angle = _score * _anglePerPoint;

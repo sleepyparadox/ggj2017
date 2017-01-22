@@ -129,27 +129,6 @@ namespace Assets.Scripts
 
         }
 
-        static void Push(Rioter rioter, Vec3 from, Vec3 to, int direction, string depthPrefix = "")
-        {
-            if (Arena.S[to] != null)
-            {
-                var neighbourTo = to;
-                neighbourTo.x += direction;
-                Push(Arena.S[to], to, neighbourTo, direction, "  " + depthPrefix);
-
-                if (Arena.S[to] != null)
-                    throw new Exception("Failed to clear " + to);
-            }
-
-            if (Arena.S[from] == rioter)
-                Arena.S[from] = null;
-
-            Arena.S[to] = rioter;
-
-            if(!(rioter is SiegeDriver))
-                rioter.Cell = to;
-        }
-
         Vec3 GetNextCell()
         {
             var cell = Cell;

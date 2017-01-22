@@ -55,6 +55,11 @@ namespace Assets.Scripts
             EndGame = new EndGameText(team);
         }
 
+        public float GetScoreNormalized(Team team)
+        {
+            return _pole.GetScoreNormalized(team);
+        }
+
         public Rioter this[Vec3 pos]
         {
             get
@@ -82,6 +87,8 @@ namespace Assets.Scripts
 
         void Update(UnityObject uObj)
         {
+            //Debug.Log("lower " + Arena.S.GetScoreNormalized(Team.lower) + " upper " + Arena.S.GetScoreNormalized(Team.UPPER));
+
             Spawn();
 
             foreach (var member in Rioters.ToList())
@@ -126,7 +133,6 @@ namespace Assets.Scripts
                     var rioter = new Rioter()
                     {
                         Team = team,
-                        Seed = UnityEngine.Random.Range(0, 100),
                     };
                     rioter.TryMoveTo(new Vec3(startX, 0, i), true);
                     Rioters.Add(rioter);
