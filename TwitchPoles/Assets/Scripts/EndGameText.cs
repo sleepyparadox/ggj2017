@@ -38,6 +38,9 @@ namespace Assets.Scripts
 
             yield return TinyCoro.WaitSeconds(10f);
 
+            foreach (var coro in TinyCoro.AllCoroutines.ToList())
+                coro.Kill();
+
             SceneManager.LoadScene("intro");
         }
     }

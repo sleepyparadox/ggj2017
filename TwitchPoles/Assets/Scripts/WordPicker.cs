@@ -17,6 +17,8 @@ namespace Assets.Scripts
         public WordPicker()
         {
             TinyCoro.SpawnNext(DoPick);
+            TinyCoro.SpawnNext(PushRandom);
+
         }
 
         private IEnumerator DoPick()
@@ -115,6 +117,23 @@ namespace Assets.Scripts
                 return true;
             }
             return false;
+        }
+
+        private IEnumerator PushRandom()
+        {
+            while(true)
+            {
+                foreach(var word in _words.Values.OrderBy(w => UnityEngine.Random.Range(0, 100)).ToList())
+                {
+                    // bias towards upper case because mobile device caps can be dodgy
+                    var team = UnityEngine.Random.Range(0, 100) < 40 ? Team.lower : Team.UPPER;
+                    word.Use(team);
+
+                    yield return TinyCoro.WaitSeconds(0.5f);
+                }
+
+                yield return TinyCoro.WaitSeconds(5f);
+            }
         }
 
     }
