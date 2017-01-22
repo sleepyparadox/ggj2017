@@ -49,8 +49,12 @@ namespace Assets.Scripts
                                 continue;
                             }
 
+                            var lane = GetUnusedLane();
+                            if (!lane.HasValue)
+                                continue;
+
                             spawnedOne = true;
-                            var seigeWord = new SiegeWord(key, wordTeam);
+                            var seigeWord = new SiegeWord(key, wordTeam, lane.Value);
 
                             _words.Add(key, seigeWord);
                             seigeWord.OnDispose += d => _words.Remove((d as SiegeWord).Key);
@@ -65,6 +69,23 @@ namespace Assets.Scripts
                 else
                     yield return null;
             }
+        }
+
+        int? GetUnusedLane()
+        {
+            var unusedLanes = new List<int>();
+            for (int z = 4; z < Arena.Depth; z += SiegeWord.CellsHigh / 2)
+            {
+                if (_words.Values.Any(w => (w.SiegeDriver != null && w.SiegeDriver.Cell.z >= z && w.SiegeDriver.Cell.z <= z + SiegeWord.CellsHigh)
+                                            || ((int)(w.WorldPosition.y / 8) >= z && (int)(w.WorldPosition.y / 8) <= z + SiegeWord.CellsHigh)))
+                    continue;
+                unusedLanes.Add(z);
+            }
+
+            if (unusedLanes.Any())
+                return unusedLanes[UnityEngine.Random.Range(0, unusedLanes.Count)];
+            else
+                return null;
         }
 
         public void MessageRecieved(string msg)
